@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FlexDataSource_Example' do
+  pod 'FlexDataSource', :path => '../'
+
+  target 'FlexDataSource_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
