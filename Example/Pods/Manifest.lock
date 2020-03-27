@@ -1,0 +1,16 @@
+PODS:
+  - FlexDataSource (0.1.0)
+
+DEPENDENCIES:
+  - FlexDataSource (from `../`)
+
+EXTERNAL SOURCES:
+  FlexDataSource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FlexDataSource: 1827b78ebe955409cea51abdeb53464e38d030fb
+
+PODFILE CHECKSUM: 5d2795174723837e8e2ff374f6d037e4ed6eff08
+
+COCOAPODS: 1.9.0

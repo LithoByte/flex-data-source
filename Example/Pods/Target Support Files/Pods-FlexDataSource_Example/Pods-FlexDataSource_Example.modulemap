@@ -1,0 +1,6 @@
+framework module Pods_FlexDataSource_Example {
+  umbrella header "Pods-FlexDataSource_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

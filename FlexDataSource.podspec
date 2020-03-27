@@ -9,34 +9,21 @@
 Pod::Spec.new do |s|
   s.name             = 'FlexDataSource'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FlexDataSource.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'FlexDataSource makes it dead simple to create table views with multiple types of cells coexisting.'
+  s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1']
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This pod moves configuration from the data source to individual cell model classes. By doing so, it becomes straightforward to mix and match cells within the same UITableView.
                        DESC
 
-  s.homepage         = 'https://github.com/Elliot/FlexDataSource'
+  s.homepage         = 'https://github.com/ThryvInc/flex-data-source'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Elliot' => 'elliot.schrock@gmail.com' }
-  s.source           = { :git => 'https://github.com/Elliot/FlexDataSource.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Elliot' => '' }
+  s.source           = { :git => 'https://github.com/ThryvInc/flex-data-source.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/elliot_schrock'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'FlexDataSource/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'FlexDataSource' => ['FlexDataSource/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
