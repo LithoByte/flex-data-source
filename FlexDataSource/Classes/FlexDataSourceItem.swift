@@ -34,10 +34,9 @@ open class ConcreteFlexDataSourceItem<T>: FlexDataSourceItem where T: UITableVie
 }
 
 open class FunctionalFlexDataSourceItem<T>: ConcreteFlexDataSourceItem<T> where T: UITableViewCell {
-    var identifier: String = "cell"
     private let configureCell: (UITableViewCell) -> Void
 
-    public init(identifier: String, _ configureCell: @escaping (UITableViewCell) -> Void) {
+    public init(identifier: String = "cell", _ configureCell: @escaping (UITableViewCell) -> Void) {
         self.configureCell = configureCell
         super.init(identifier: identifier)
     }

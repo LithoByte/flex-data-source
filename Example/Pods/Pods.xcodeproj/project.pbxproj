@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		365C170C48795F4F910D4DC7A7C1DD87 /* Pods-FlexDataSource_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A6D9A995E276C6CA566AC389367200D /* Pods-FlexDataSource_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49E4E52A24CEFC4D00795432 /* FlexCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4E52924CEFC4D00795432 /* FlexCollectionDataSource.swift */; };
+		49E4E52C24CEFD4300795432 /* FlexCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4E52B24CEFD4300795432 /* FlexCollectionItem.swift */; };
+		49E4E53024CF014C00795432 /* FlexCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4E52F24CF014C00795432 /* FlexCollectionSection.swift */; };
 		4A6A0823B90F55EB5261FFD458BADAEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		4DE4E144EDC8339A892A79B820D82D7E /* FlexDataSourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23D866A984D62A8A8F8762403DCB98 /* FlexDataSourceSection.swift */; };
 		61DE04EF51A63B1CD9DC5C587E5588B7 /* Pods-FlexDataSource_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D427F8430E4CEA25E082D6994B09739 /* Pods-FlexDataSource_Tests-dummy.m */; };
@@ -52,6 +55,9 @@
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		428C565818EA1367A7B86636878BD2BD /* Pods_FlexDataSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexDataSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4642C3C430FD5ABD0EBA878B8484F8F3 /* Pods-FlexDataSource_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexDataSource_Example-Info.plist"; sourceTree = "<group>"; };
+		49E4E52924CEFC4D00795432 /* FlexCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlexCollectionDataSource.swift; path = FlexDataSource/Classes/FlexCollectionDataSource.swift; sourceTree = "<group>"; };
+		49E4E52B24CEFD4300795432 /* FlexCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlexCollectionItem.swift; path = FlexDataSource/Classes/FlexCollectionItem.swift; sourceTree = "<group>"; };
+		49E4E52F24CF014C00795432 /* FlexCollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlexCollectionSection.swift; path = FlexDataSource/Classes/FlexCollectionSection.swift; sourceTree = "<group>"; };
 		4C58591B52A15C3036E591FA3D6FA3EA /* Pods-FlexDataSource_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexDataSource_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D55CCE073140947A8DD019A03533F82 /* Pods-FlexDataSource_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexDataSource_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A6D9A995E276C6CA566AC389367200D /* Pods-FlexDataSource_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlexDataSource_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -176,11 +182,14 @@
 		C1FB07F55508CCDEFFBB2003B7C0327B /* FlexDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				49E4E52F24CF014C00795432 /* FlexCollectionSection.swift */,
+				49E4E52924CEFC4D00795432 /* FlexCollectionDataSource.swift */,
+				49E4E52B24CEFD4300795432 /* FlexCollectionItem.swift */,
 				C27402252FC97E4153A92D8DA8C115B6 /* FlexDataSource.swift */,
 				9DB077C442349EAA0A43FB9129225E2B /* FlexDataSourceItem.swift */,
 				DA23D866A984D62A8A8F8762403DCB98 /* FlexDataSourceSection.swift */,
-				705E78925298E2A18F84C5CA3F266CD7 /* Pod */,
 				D542A05788B164879729F9324A8C9CF6 /* Support Files */,
+				705E78925298E2A18F84C5CA3F266CD7 /* Pod */,
 			);
 			name = FlexDataSource;
 			path = ../..;
@@ -374,7 +383,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				73A99F7BAB57D607A2385BE2E0762111 /* FlexDataSource-dummy.m in Sources */,
+				49E4E52C24CEFD4300795432 /* FlexCollectionItem.swift in Sources */,
+				49E4E53024CF014C00795432 /* FlexCollectionSection.swift in Sources */,
 				83DF67179DA11E265679E02F2FB29E49 /* FlexDataSource.swift in Sources */,
+				49E4E52A24CEFC4D00795432 /* FlexCollectionDataSource.swift in Sources */,
 				7FB6A45A8BED2A25EC585DD69D76D36F /* FlexDataSourceItem.swift in Sources */,
 				4DE4E144EDC8339A892A79B820D82D7E /* FlexDataSourceSection.swift in Sources */,
 			);
