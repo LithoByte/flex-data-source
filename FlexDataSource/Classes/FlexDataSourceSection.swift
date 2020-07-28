@@ -10,12 +10,15 @@ import UIKit
 open class FlexDataSourceSection: NSObject {
     open var title: String?
     open var items: [FlexDataSourceItem]?
+    
+    public init(title: String? = nil, items: [FlexDataSourceItem]? = nil) {
+        self.title = title
+        self.items = items
+    }
 }
 
 public func itemsToSection(items: [FlexDataSourceItem]) -> FlexDataSourceSection {
-    let section = FlexDataSourceSection()
-    section.items = items
-    return section
+    return FlexDataSourceSection(items: items)
 }
 
 public func sectionsToDataSource(sections: [FlexDataSourceSection]?) -> FlexDataSource {

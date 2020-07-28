@@ -20,6 +20,11 @@ open class FlexCollectionDataSource: NSObject, UICollectionViewDataSource {
         }
     }
     
+    public init(_ collectionView: UICollectionView? = nil, _ sections: [FlexCollectionSection]? = nil) {
+        self.collectionView = collectionView
+        self.sections = sections
+    }
+    
     open func registerCells() {
         if let sections = self.sections, let  collectionView = self.collectionView {
             for section in sections {

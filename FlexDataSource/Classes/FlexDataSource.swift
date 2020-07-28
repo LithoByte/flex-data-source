@@ -11,12 +11,18 @@ open class FlexDataSource: NSObject, UITableViewDataSource {
     public var tableView: UITableView? {
         didSet {
             registerCells()
+            tableView?.dataSource = self
         }
     }
     public var sections: [FlexDataSourceSection]? {
         didSet {
             registerCells()
         }
+    }
+    
+    public init(_ tableView: UITableView? = nil, _ sections: [FlexDataSourceSection]? = nil) {
+        self.tableView = tableView
+        self.sections = sections
     }
     
     open func registerCells() {
