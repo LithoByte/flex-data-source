@@ -17,11 +17,11 @@ open class FlexCollectionSection: NSObject {
     }
 }
 
-public func itemsToSection(items: [FlexCollectionItem]) -> FlexCollectionSection {
+public func collectionItemsToSection(items: [FlexCollectionItem]) -> FlexCollectionSection {
     return FlexCollectionSection(items: items)
 }
 
-public func sectionsToDataSource(sections: [FlexCollectionSection]?) -> FlexCollectionDataSource {
+public func collectionSectionsToDataSource(sections: [FlexCollectionSection]?) -> FlexCollectionDataSource {
     let ds = FlexCollectionDataSource()
     ds.sections = sections
     return ds
