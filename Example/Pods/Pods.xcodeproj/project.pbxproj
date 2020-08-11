@@ -7,30 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02BE540059B4F55D41ACE6A1EBC1A980 /* FlexDataSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68006D456DA873F6730D16A50AAB85F4 /* FlexDataSourceItem.swift */; };
+		1039019CC3889F7B4F1E1BCB28C658AB /* Pods-FlexDataSource_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3317B556BEFFA81B64B11F5690314A6 /* Pods-FlexDataSource_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		222208C82C8CE0B31341201AD79CFA08 /* FlexCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B835B3E33E25C86CFE47D7F04DDCA69 /* FlexCollectionDataSource.swift */; };
+		31601BEAF088CE64D1F65D061A3C9FA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF46BFFFFA6BF261F460F9DCAB574329 /* Foundation.framework */; };
+		31F6D3C8227CE55E6C27B51DD4529DC4 /* FlexDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46708E38FE301D6535BE811A120754 /* FlexDataSource-dummy.m */; };
 		365C170C48795F4F910D4DC7A7C1DD87 /* Pods-FlexDataSource_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A6D9A995E276C6CA566AC389367200D /* Pods-FlexDataSource_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49E4E52A24CEFC4D00795432 /* FlexCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4E52924CEFC4D00795432 /* FlexCollectionDataSource.swift */; };
-		49E4E52C24CEFD4300795432 /* FlexCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4E52B24CEFD4300795432 /* FlexCollectionItem.swift */; };
-		49E4E53024CF014C00795432 /* FlexCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4E52F24CF014C00795432 /* FlexCollectionSection.swift */; };
-		4A6A0823B90F55EB5261FFD458BADAEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4DE4E144EDC8339A892A79B820D82D7E /* FlexDataSourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23D866A984D62A8A8F8762403DCB98 /* FlexDataSourceSection.swift */; };
+		3E9A2618B509348BC1687F04539B7AC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF46BFFFFA6BF261F460F9DCAB574329 /* Foundation.framework */; };
+		41201F6A5DEFBB5CE36264CBEC4CB7ED /* FlexDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D114304BD31C8ACE44A4324F8CA53 /* FlexDataSource.swift */; };
+		491911C688A255140CE674F17C704B3E /* FUITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB535CEE69A43DD61A0A0237714238 /* FUITableViewDelegate.swift */; };
+		4A6A0823B90F55EB5261FFD458BADAEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF46BFFFFA6BF261F460F9DCAB574329 /* Foundation.framework */; };
 		61DE04EF51A63B1CD9DC5C587E5588B7 /* Pods-FlexDataSource_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D427F8430E4CEA25E082D6994B09739 /* Pods-FlexDataSource_Tests-dummy.m */; };
-		6A33595FA90CFD14ED7823DBC95A0F2D /* Pods-FlexDataSource_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3317B556BEFFA81B64B11F5690314A6 /* Pods-FlexDataSource_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C08F9EDEC6368F98CB0C3E299CDF233 /* Pods-FlexDataSource_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E38E7D6A5FB131C96B4818238B0DB1 /* Pods-FlexDataSource_Example-dummy.m */; };
-		72B74ADC9AD7A8C1C16477D4FBCEA5EB /* FlexDataSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD11D1C40D4E90AB18FA5C9AA497963D /* FlexDataSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73A99F7BAB57D607A2385BE2E0762111 /* FlexDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93FE918ACA3573381209D47EAC4E20 /* FlexDataSource-dummy.m */; };
-		7FB6A45A8BED2A25EC585DD69D76D36F /* FlexDataSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB077C442349EAA0A43FB9129225E2B /* FlexDataSourceItem.swift */; };
-		82163FF3EE5AAC155E6EF853E0D905D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		83DF67179DA11E265679E02F2FB29E49 /* FlexDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27402252FC97E4153A92D8DA8C115B6 /* FlexDataSource.swift */; };
-		E260B4E860FBC1EBB42C81E1350D4425 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		69C7EE8CF8E39F3D0256BF086EBF059F /* fuikit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1047A06DDBF7819BCD1A3DD4C13B013 /* fuikit-dummy.m */; };
+		72C25C8305948C13C5B53D1B04534C32 /* FUISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0B0723969A00B577CABBA7A2C0FAA /* FUISearchBarDelegate.swift */; };
+		773B44A94357B8CC53A77CC4B57E9808 /* Pods-FlexDataSource_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E38E7D6A5FB131C96B4818238B0DB1 /* Pods-FlexDataSource_Example-dummy.m */; };
+		842415F703D5EC38759522441047B74A /* fuikit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A722371AD05F773C1828D3841AC889A0 /* fuikit.framework */; };
+		85907B2DDEA5BE14B401954DFFCFAF1B /* FUITableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D330D555ECEFBEADD4FF3137EE83A /* FUITableViewViewController.xib */; };
+		9057C7C56566A82F1D7CF400A6E8BA36 /* FUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDB840F1E988766F0848379E29BD6B /* FUITextFieldDelegate.swift */; };
+		910710F638D86A526F6A990445CC637D /* FUITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8ADCF2B3F3AD39581DBF2C51C95E2 /* FUITextViewDelegate.swift */; };
+		9A35CF3DF665480504A24EAD74C593F4 /* FUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8CDCCB80A34ECC6A3330F0A1C5218A /* FUIViewController.swift */; };
+		AA72DB7AC4157FB44C1381F469981CB8 /* FUITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B5B23454BB39239BEF5D9E448B6D3D /* FUITableViewDataSource.swift */; };
+		ADD96D79D7DE9807F9E054570F3FDB42 /* FlexDataSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC6673C9903FA59D633761021884CBC8 /* FlexDataSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B516C7E8112F3B8082CE24698A440869 /* fuikit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 160421BB92AF6D1C49266D58099AFA63 /* fuikit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAE002DD5B35AA0318D5F5C0B4E13D05 /* FUITableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10248540E6893C417F2D4E8C875F8C /* FUITableViewViewController.swift */; };
+		BC483EA941F29326F4738B63F9B26104 /* FlexCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2261251D93B0A3AF24649185017FE01 /* FlexCollectionItem.swift */; };
+		C6A391C47BF2EEDB0C05199B4C7E6040 /* Array+Flex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF46448652A69283D9285485BDE9239 /* Array+Flex.swift */; };
+		F0C8CC70165446B9E52EFA87D90D6E1C /* FlexCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190A12818BC0635D715B781D34AF876 /* FlexCollectionSection.swift */; };
+		F93F030AF5645074BB58E27B36A0EF81 /* FlexDataSourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB48F690DB3B8C68DB02A5B0F8C7D8F /* FlexDataSourceSection.swift */; };
+		F95AD61D203B788BEBBB87F7052C16C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF46BFFFFA6BF261F460F9DCAB574329 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3DD86F951E4DB3C682814EF59A2D56F1 /* PBXContainerItemProxy */ = {
+		31FEBF6281542AB2D69660A2B3B8A5B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 981A38299BBD51F93FEB6762FE951665;
-			remoteInfo = FlexDataSource;
+			remoteGlobalIDString = C04700E22229A736E5C110BBF44E6112;
+			remoteInfo = fuikit;
+		};
+		91C5DC200176685B98947D2F4896E485 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C04700E22229A736E5C110BBF44E6112;
+			remoteInfo = fuikit;
 		};
 		996C32E62566E530E957A66A3437B2F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -39,63 +59,89 @@
 			remoteGlobalIDString = 83E3996C68A8C5BC9A618BB91898C1E0;
 			remoteInfo = "Pods-FlexDataSource_Example";
 		};
+		C68C842F4F2862986DF65FCCF0A77998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 981A38299BBD51F93FEB6762FE951665;
+			remoteInfo = FlexDataSource;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B293BE9B4629596B0E586E3618842F1 /* Pods-FlexDataSource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexDataSource_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0C93FE918ACA3573381209D47EAC4E20 /* FlexDataSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexDataSource-dummy.m"; sourceTree = "<group>"; };
+		0DB48F690DB3B8C68DB02A5B0F8C7D8F /* FlexDataSourceSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexDataSourceSection.swift; path = FlexDataSource/Classes/FlexDataSourceSection.swift; sourceTree = "<group>"; };
 		0E78779C315B7A269A8FC1D345D25FBC /* Pods-FlexDataSource_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexDataSource_Tests-Info.plist"; sourceTree = "<group>"; };
-		1B2BACA9099F20CF81E52C2933AE7EDE /* FlexDataSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexDataSource.modulemap; sourceTree = "<group>"; };
+		160421BB92AF6D1C49266D58099AFA63 /* fuikit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-umbrella.h"; sourceTree = "<group>"; };
+		1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = fuikit.framework; path = fuikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F85AF9103571485EB907A5D9747447 /* FlexDataSource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexDataSource.release.xcconfig; sourceTree = "<group>"; };
 		1D427F8430E4CEA25E082D6994B09739 /* Pods-FlexDataSource_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlexDataSource_Tests-dummy.m"; sourceTree = "<group>"; };
-		1DBD3ED97E78348E3A5AF510095CA968 /* FlexDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlexDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23DDC5EDD11FD784444EE407AD83560C /* FlexDataSource-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexDataSource-Info.plist"; sourceTree = "<group>"; };
+		1DBD3ED97E78348E3A5AF510095CA968 /* FlexDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlexDataSource.framework; path = FlexDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EAD3922E8502447E56F9F86EC55F0B /* Pods-FlexDataSource_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexDataSource_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2BE56C7D35D586A6DC26380CE2CDCD34 /* Pods-FlexDataSource_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexDataSource_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3155CD9FEB8D10552E10B54DC8CDCBE8 /* FlexDataSource.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FlexDataSource.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		428C565818EA1367A7B86636878BD2BD /* Pods_FlexDataSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexDataSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8D330D555ECEFBEADD4FF3137EE83A /* FUITableViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FUITableViewViewController.xib; path = fuikit/Classes/FUITableViewViewController.xib; sourceTree = "<group>"; };
+		2E465B012E3D27E1804EDAC96DA82E23 /* FlexDataSource-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexDataSource-Info.plist"; sourceTree = "<group>"; };
+		3949F1D75E4F9FFCEAB0596B2BDEC087 /* fuikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.release.xcconfig; sourceTree = "<group>"; };
+		3B1D114304BD31C8ACE44A4324F8CA53 /* FlexDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexDataSource.swift; path = FlexDataSource/Classes/FlexDataSource.swift; sourceTree = "<group>"; };
+		3B835B3E33E25C86CFE47D7F04DDCA69 /* FlexCollectionDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexCollectionDataSource.swift; path = FlexDataSource/Classes/FlexCollectionDataSource.swift; sourceTree = "<group>"; };
+		3BD048ADE1250181995E3B63A21893B9 /* fuikit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = fuikit.modulemap; sourceTree = "<group>"; };
+		3F46708E38FE301D6535BE811A120754 /* FlexDataSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexDataSource-dummy.m"; sourceTree = "<group>"; };
+		3FF46448652A69283D9285485BDE9239 /* Array+Flex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Flex.swift"; path = "FlexDataSource/Classes/Array+Flex.swift"; sourceTree = "<group>"; };
+		428C565818EA1367A7B86636878BD2BD /* Pods_FlexDataSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlexDataSource_Tests.framework; path = "Pods-FlexDataSource_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B5B23454BB39239BEF5D9E448B6D3D /* FUITableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITableViewDataSource.swift; path = fuikit/Classes/FUITableViewDataSource.swift; sourceTree = "<group>"; };
 		4642C3C430FD5ABD0EBA878B8484F8F3 /* Pods-FlexDataSource_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexDataSource_Example-Info.plist"; sourceTree = "<group>"; };
-		49E4E52924CEFC4D00795432 /* FlexCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlexCollectionDataSource.swift; path = FlexDataSource/Classes/FlexCollectionDataSource.swift; sourceTree = "<group>"; };
-		49E4E52B24CEFD4300795432 /* FlexCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlexCollectionItem.swift; path = FlexDataSource/Classes/FlexCollectionItem.swift; sourceTree = "<group>"; };
-		49E4E52F24CF014C00795432 /* FlexCollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlexCollectionSection.swift; path = FlexDataSource/Classes/FlexCollectionSection.swift; sourceTree = "<group>"; };
 		4C58591B52A15C3036E591FA3D6FA3EA /* Pods-FlexDataSource_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexDataSource_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D55CCE073140947A8DD019A03533F82 /* Pods-FlexDataSource_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexDataSource_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		501990BA2E5D0C9E8F87CB47C77C0D77 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		57BDB840F1E988766F0848379E29BD6B /* FUITextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITextFieldDelegate.swift; path = fuikit/Classes/FUITextFieldDelegate.swift; sourceTree = "<group>"; };
 		5A6D9A995E276C6CA566AC389367200D /* Pods-FlexDataSource_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlexDataSource_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7D4127E822D6427BB9DC63542221034F /* Pods_FlexDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexDataSource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AAB535CEE69A43DD61A0A0237714238 /* FUITableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITableViewDelegate.swift; path = fuikit/Classes/FUITableViewDelegate.swift; sourceTree = "<group>"; };
+		68006D456DA873F6730D16A50AAB85F4 /* FlexDataSourceItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexDataSourceItem.swift; path = FlexDataSource/Classes/FlexDataSourceItem.swift; sourceTree = "<group>"; };
+		6CD66503F9ADDEEE7D71FED347C15CAB /* fuikit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "fuikit-Info.plist"; sourceTree = "<group>"; };
+		7C10248540E6893C417F2D4E8C875F8C /* FUITableViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITableViewViewController.swift; path = fuikit/Classes/FUITableViewViewController.swift; sourceTree = "<group>"; };
+		7D4127E822D6427BB9DC63542221034F /* Pods_FlexDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlexDataSource_Example.framework; path = "Pods-FlexDataSource_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7CFB25E050C4067A5FF1932143B4F4 /* FlexDataSource.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FlexDataSource.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7EF215AF4E69F56AEE8E03482D0231EC /* Pods-FlexDataSource_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexDataSource_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9A2926975E5CC32BD5A52E1AA99B0D22 /* Pods-FlexDataSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexDataSource_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DB077C442349EAA0A43FB9129225E2B /* FlexDataSourceItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexDataSourceItem.swift; path = FlexDataSource/Classes/FlexDataSourceItem.swift; sourceTree = "<group>"; };
-		A2D2381F45FFA2F1E9934AD3F71D8720 /* FlexDataSource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexDataSource.debug.xcconfig; sourceTree = "<group>"; };
+		9B8CDCCB80A34ECC6A3330F0A1C5218A /* FUIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUIViewController.swift; path = fuikit/Classes/FUIViewController.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3317B556BEFFA81B64B11F5690314A6 /* Pods-FlexDataSource_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlexDataSource_Example-umbrella.h"; sourceTree = "<group>"; };
 		A6F297546539881DA08DB735CCDCA952 /* Pods-FlexDataSource_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlexDataSource_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A722371AD05F773C1828D3841AC889A0 /* fuikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fuikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81F5B74786DFE6671D7E31B3CE95E19 /* fuikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.debug.xcconfig; sourceTree = "<group>"; };
 		AC5948D217AC01BB47E7EAD79BF5BE33 /* Pods-FlexDataSource_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlexDataSource_Tests.modulemap"; sourceTree = "<group>"; };
-		AC809A1F2C559A4DC0B63E8060DD51F5 /* FlexDataSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexDataSource-prefix.pch"; sourceTree = "<group>"; };
 		B06BB8B65906F6DBCEE75D46CF79E7A3 /* Pods-FlexDataSource_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlexDataSource_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C27402252FC97E4153A92D8DA8C115B6 /* FlexDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexDataSource.swift; path = FlexDataSource/Classes/FlexDataSource.swift; sourceTree = "<group>"; };
+		B1047A06DDBF7819BCD1A3DD4C13B013 /* fuikit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fuikit-dummy.m"; sourceTree = "<group>"; };
+		B2E14686242D8997C6464455A0FF70F8 /* FlexDataSource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexDataSource.debug.xcconfig; sourceTree = "<group>"; };
+		BA6847ABA1E0176FC9829AC35F7BE171 /* FlexDataSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexDataSource.modulemap; sourceTree = "<group>"; };
 		C7E38E7D6A5FB131C96B4818238B0DB1 /* Pods-FlexDataSource_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlexDataSource_Example-dummy.m"; sourceTree = "<group>"; };
-		D44AAE6AE3D89718D64610016BB353A6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DA23D866A984D62A8A8F8762403DCB98 /* FlexDataSourceSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexDataSourceSection.swift; path = FlexDataSource/Classes/FlexDataSourceSection.swift; sourceTree = "<group>"; };
+		CCCBB9DEB433C9A69FF7A06F13D32FAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D190A12818BC0635D715B781D34AF876 /* FlexCollectionSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexCollectionSection.swift; path = FlexDataSource/Classes/FlexCollectionSection.swift; sourceTree = "<group>"; };
+		D1D0B0723969A00B577CABBA7A2C0FAA /* FUISearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUISearchBarDelegate.swift; path = fuikit/Classes/FUISearchBarDelegate.swift; sourceTree = "<group>"; };
+		DC6673C9903FA59D633761021884CBC8 /* FlexDataSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexDataSource-umbrella.h"; sourceTree = "<group>"; };
 		DC7363BFA37000815B880892ABF07E45 /* Pods-FlexDataSource_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlexDataSource_Example.modulemap"; sourceTree = "<group>"; };
-		E210977F9834228283B79EF86FB23600 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F58E84BEB67BCE3203D063FF9EB39EE2 /* FlexDataSource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexDataSource.release.xcconfig; sourceTree = "<group>"; };
-		FD11D1C40D4E90AB18FA5C9AA497963D /* FlexDataSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexDataSource-umbrella.h"; sourceTree = "<group>"; };
+		DCD0C79CA34492BD75B1626F021C72F1 /* fuikit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-prefix.pch"; sourceTree = "<group>"; };
+		E5A8ADCF2B3F3AD39581DBF2C51C95E2 /* FUITextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITextViewDelegate.swift; path = fuikit/Classes/FUITextViewDelegate.swift; sourceTree = "<group>"; };
+		EF46BFFFFA6BF261F460F9DCAB574329 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F1BD4F8738BA63C7BFD999E53FB29F2D /* FlexDataSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexDataSource-prefix.pch"; sourceTree = "<group>"; };
+		F2261251D93B0A3AF24649185017FE01 /* FlexCollectionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexCollectionItem.swift; path = FlexDataSource/Classes/FlexCollectionItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38FA64F1601A247E0382310F15D4B425 /* Frameworks */ = {
+		639A0FD69CF0A1BE1D6735060D46428B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82163FF3EE5AAC155E6EF853E0D905D0 /* Foundation.framework in Frameworks */,
+				31601BEAF088CE64D1F65D061A3C9FA0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BAF810BF6F42839F187C7464C39B170 /* Frameworks */ = {
+		BC8DD0D6F59D6792B4EFD46E627A8029 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E260B4E860FBC1EBB42C81E1350D4425 /* Foundation.framework in Frameworks */,
+				F95AD61D203B788BEBBB87F7052C16C8 /* Foundation.framework in Frameworks */,
+				842415F703D5EC38759522441047B74A /* fuikit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,25 +153,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F87F885E5041A4D4FF007B189FE1BEAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E9A2618B509348BC1687F04539B7AC0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C14D4DCE870D6F93D4C8E130314A5A5 /* Development Pods */ = {
+		1F0D4690217C11F9436239CC337DDAC8 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C1FB07F55508CCDEFFBB2003B7C0327B /* FlexDataSource */,
+				EF46BFFFFA6BF261F460F9DCAB574329 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		334A8536A2185BF953B130C532A110B1 /* fuikit */ = {
+			isa = PBXGroup;
+			children = (
+				D1D0B0723969A00B577CABBA7A2C0FAA /* FUISearchBarDelegate.swift */,
+				42B5B23454BB39239BEF5D9E448B6D3D /* FUITableViewDataSource.swift */,
+				5AAB535CEE69A43DD61A0A0237714238 /* FUITableViewDelegate.swift */,
+				7C10248540E6893C417F2D4E8C875F8C /* FUITableViewViewController.swift */,
+				57BDB840F1E988766F0848379E29BD6B /* FUITextFieldDelegate.swift */,
+				E5A8ADCF2B3F3AD39581DBF2C51C95E2 /* FUITextViewDelegate.swift */,
+				9B8CDCCB80A34ECC6A3330F0A1C5218A /* FUIViewController.swift */,
+				B9F98DEB91B43971D46D60D02B911F1E /* Resources */,
+				9183E5A4C86EF83372EB580D230AF5F5 /* Support Files */,
+			);
+			name = fuikit;
+			path = fuikit;
+			sourceTree = "<group>";
+		};
+		54C08534799D1BD647FB325ECEB9F5CB /* FlexDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3FF46448652A69283D9285485BDE9239 /* Array+Flex.swift */,
+				3B835B3E33E25C86CFE47D7F04DDCA69 /* FlexCollectionDataSource.swift */,
+				F2261251D93B0A3AF24649185017FE01 /* FlexCollectionItem.swift */,
+				D190A12818BC0635D715B781D34AF876 /* FlexCollectionSection.swift */,
+				3B1D114304BD31C8ACE44A4324F8CA53 /* FlexDataSource.swift */,
+				68006D456DA873F6730D16A50AAB85F4 /* FlexDataSourceItem.swift */,
+				0DB48F690DB3B8C68DB02A5B0F8C7D8F /* FlexDataSourceSection.swift */,
+				C1654E1D3BA2C804C7BB0CC24E1D1720 /* Pod */,
+				BED933E221FE010E2C6EAF8885629245 /* Support Files */,
+			);
+			name = FlexDataSource;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		55E26F4A862BC37C1F0F87D2300F2003 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54C08534799D1BD647FB325ECEB9F5CB /* FlexDataSource */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		705E78925298E2A18F84C5CA3F266CD7 /* Pod */ = {
+		7E83286F6CD19086C7E926FC108B7FBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3155CD9FEB8D10552E10B54DC8CDCBE8 /* FlexDataSource.podspec */,
-				D44AAE6AE3D89718D64610016BB353A6 /* LICENSE */,
-				E210977F9834228283B79EF86FB23600 /* README.md */,
+				1DBD3ED97E78348E3A5AF510095CA968 /* FlexDataSource.framework */,
+				1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */,
+				7D4127E822D6427BB9DC63542221034F /* Pods_FlexDataSource_Example.framework */,
+				428C565818EA1367A7B86636878BD2BD /* Pods_FlexDataSource_Tests.framework */,
 			);
-			name = Pod;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		85CB414F099D8A7CFC8FFDBE8A416C60 /* Pods-FlexDataSource_Tests */ = {
@@ -144,14 +241,19 @@
 			path = "Target Support Files/Pods-FlexDataSource_Tests";
 			sourceTree = "<group>";
 		};
-		9A99D40F869DCD0A553D33284ABE683D /* Products */ = {
+		9183E5A4C86EF83372EB580D230AF5F5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1DBD3ED97E78348E3A5AF510095CA968 /* FlexDataSource.framework */,
-				7D4127E822D6427BB9DC63542221034F /* Pods_FlexDataSource_Example.framework */,
-				428C565818EA1367A7B86636878BD2BD /* Pods_FlexDataSource_Tests.framework */,
+				3BD048ADE1250181995E3B63A21893B9 /* fuikit.modulemap */,
+				B1047A06DDBF7819BCD1A3DD4C13B013 /* fuikit-dummy.m */,
+				6CD66503F9ADDEEE7D71FED347C15CAB /* fuikit-Info.plist */,
+				DCD0C79CA34492BD75B1626F021C72F1 /* fuikit-prefix.pch */,
+				160421BB92AF6D1C49266D58099AFA63 /* fuikit-umbrella.h */,
+				A81F5B74786DFE6671D7E31B3CE95E19 /* fuikit.debug.xcconfig */,
+				3949F1D75E4F9FFCEAB0596B2BDEC087 /* fuikit.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/fuikit";
 			sourceTree = "<group>";
 		};
 		B792F5659DA3164B2DE8CC6B7307BB65 /* Pods-FlexDataSource_Example */ = {
@@ -171,28 +273,37 @@
 			path = "Target Support Files/Pods-FlexDataSource_Example";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		B9F98DEB91B43971D46D60D02B911F1E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				2D8D330D555ECEFBEADD4FF3137EE83A /* FUITableViewViewController.xib */,
 			);
-			name = iOS;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		C1FB07F55508CCDEFFBB2003B7C0327B /* FlexDataSource */ = {
+		BED933E221FE010E2C6EAF8885629245 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				49E4E52F24CF014C00795432 /* FlexCollectionSection.swift */,
-				49E4E52924CEFC4D00795432 /* FlexCollectionDataSource.swift */,
-				49E4E52B24CEFD4300795432 /* FlexCollectionItem.swift */,
-				C27402252FC97E4153A92D8DA8C115B6 /* FlexDataSource.swift */,
-				9DB077C442349EAA0A43FB9129225E2B /* FlexDataSourceItem.swift */,
-				DA23D866A984D62A8A8F8762403DCB98 /* FlexDataSourceSection.swift */,
-				D542A05788B164879729F9324A8C9CF6 /* Support Files */,
-				705E78925298E2A18F84C5CA3F266CD7 /* Pod */,
+				BA6847ABA1E0176FC9829AC35F7BE171 /* FlexDataSource.modulemap */,
+				3F46708E38FE301D6535BE811A120754 /* FlexDataSource-dummy.m */,
+				2E465B012E3D27E1804EDAC96DA82E23 /* FlexDataSource-Info.plist */,
+				F1BD4F8738BA63C7BFD999E53FB29F2D /* FlexDataSource-prefix.pch */,
+				DC6673C9903FA59D633761021884CBC8 /* FlexDataSource-umbrella.h */,
+				B2E14686242D8997C6464455A0FF70F8 /* FlexDataSource.debug.xcconfig */,
+				19F85AF9103571485EB907A5D9747447 /* FlexDataSource.release.xcconfig */,
 			);
-			name = FlexDataSource;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FlexDataSource";
+			sourceTree = "<group>";
+		};
+		C1654E1D3BA2C804C7BB0CC24E1D1720 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7E7CFB25E050C4067A5FF1932143B4F4 /* FlexDataSource.podspec */,
+				CCCBB9DEB433C9A69FF7A06F13D32FAC /* LICENSE */,
+				501990BA2E5D0C9E8F87CB47C77C0D77 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C68B803CD2248746AE54C72E0059DD85 /* Targets Support Files */ = {
@@ -204,51 +315,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CF1408CF629C7361332E53B88F7BD30C = {
+		C8B4B822D40691C3747FA677E507E343 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				0C14D4DCE870D6F93D4C8E130314A5A5 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				9A99D40F869DCD0A553D33284ABE683D /* Products */,
-				C68B803CD2248746AE54C72E0059DD85 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				A722371AD05F773C1828D3841AC889A0 /* fuikit.framework */,
+				1F0D4690217C11F9436239CC337DDAC8 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D542A05788B164879729F9324A8C9CF6 /* Support Files */ = {
+		CA703846771CF8D3F5C5F8C3366D34D2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1B2BACA9099F20CF81E52C2933AE7EDE /* FlexDataSource.modulemap */,
-				0C93FE918ACA3573381209D47EAC4E20 /* FlexDataSource-dummy.m */,
-				23DDC5EDD11FD784444EE407AD83560C /* FlexDataSource-Info.plist */,
-				AC809A1F2C559A4DC0B63E8060DD51F5 /* FlexDataSource-prefix.pch */,
-				FD11D1C40D4E90AB18FA5C9AA497963D /* FlexDataSource-umbrella.h */,
-				A2D2381F45FFA2F1E9934AD3F71D8720 /* FlexDataSource.debug.xcconfig */,
-				F58E84BEB67BCE3203D063FF9EB39EE2 /* FlexDataSource.release.xcconfig */,
+				334A8536A2185BF953B130C532A110B1 /* fuikit */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FlexDataSource";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				55E26F4A862BC37C1F0F87D2300F2003 /* Development Pods */,
+				C8B4B822D40691C3747FA677E507E343 /* Frameworks */,
+				CA703846771CF8D3F5C5F8C3366D34D2 /* Pods */,
+				7E83286F6CD19086C7E926FC108B7FBB /* Products */,
+				C68B803CD2248746AE54C72E0059DD85 /* Targets Support Files */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		20A656EBBFB9CD1AD11663F840DE9AA7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A33595FA90CFD14ED7823DBC95A0F2D /* Pods-FlexDataSource_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4B0517DFC6160984009A67E89827B388 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,11 +355,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1F22324BDDED5F6B965DEBF6E5ABB26 /* Headers */ = {
+		4D32381D21AB79253D297BEB111C92DA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72B74ADC9AD7A8C1C16477D4FBCEA5EB /* FlexDataSource-umbrella.h in Headers */,
+				ADD96D79D7DE9807F9E054570F3FDB42 /* FlexDataSource-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECD49C37897F64976A061D549FEBD16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1039019CC3889F7B4F1E1BCB28C658AB /* Pods-FlexDataSource_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E999A89DC64A9232AF41C8583D51E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B516C7E8112F3B8082CE24698A440869 /* fuikit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,17 +403,18 @@
 		};
 		83E3996C68A8C5BC9A618BB91898C1E0 /* Pods-FlexDataSource_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFC5EE3777B1422EFF0A47C992F87855 /* Build configuration list for PBXNativeTarget "Pods-FlexDataSource_Example" */;
+			buildConfigurationList = EB2ED574B74E50BFC04706C364DB0D04 /* Build configuration list for PBXNativeTarget "Pods-FlexDataSource_Example" */;
 			buildPhases = (
-				20A656EBBFB9CD1AD11663F840DE9AA7 /* Headers */,
-				7A6E198F833EACBE2DBD5E00C9B2649C /* Sources */,
-				4BAF810BF6F42839F187C7464C39B170 /* Frameworks */,
-				75657E778B05079DFB2FE64D7046DB4E /* Resources */,
+				5ECD49C37897F64976A061D549FEBD16 /* Headers */,
+				1F3AB6BC1C63C299BD4F15C3740C86D6 /* Sources */,
+				F87F885E5041A4D4FF007B189FE1BEAC /* Frameworks */,
+				A7DB849B3F755D1D66CF9F7D1C118779 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9C6D4FB97ECDFA8E9F13B69DBBD2D32A /* PBXTargetDependency */,
+				E426029108D8478665B432FF52803569 /* PBXTargetDependency */,
+				325C9B176BE73C0428930DFF9DFDD3D8 /* PBXTargetDependency */,
 			);
 			name = "Pods-FlexDataSource_Example";
 			productName = "Pods-FlexDataSource_Example";
@@ -308,20 +423,39 @@
 		};
 		981A38299BBD51F93FEB6762FE951665 /* FlexDataSource */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68F354603A03400100551F7A3683F6BF /* Build configuration list for PBXNativeTarget "FlexDataSource" */;
+			buildConfigurationList = 3AA5309F7D127358FDC1160A88FB7F7D /* Build configuration list for PBXNativeTarget "FlexDataSource" */;
 			buildPhases = (
-				E1F22324BDDED5F6B965DEBF6E5ABB26 /* Headers */,
-				362402867757F6A9D560F297E2143680 /* Sources */,
-				38FA64F1601A247E0382310F15D4B425 /* Frameworks */,
-				473B87784A1EB6578E70F69BA707B340 /* Resources */,
+				4D32381D21AB79253D297BEB111C92DA /* Headers */,
+				611F02EABFB23AC0072B2CF022D29AAE /* Sources */,
+				BC8DD0D6F59D6792B4EFD46E627A8029 /* Frameworks */,
+				6EBAA46E8BBDB09C6FF7308C5348311F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DBA4C8FCCFFB570D96B2AC3C69FE2B8 /* PBXTargetDependency */,
+			);
+			name = FlexDataSource;
+			productName = FlexDataSource;
+			productReference = 1DBD3ED97E78348E3A5AF510095CA968 /* FlexDataSource.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C04700E22229A736E5C110BBF44E6112 /* fuikit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EF8E7A3F838FE67D9174FC78A1188A2 /* Build configuration list for PBXNativeTarget "fuikit" */;
+			buildPhases = (
+				A4E999A89DC64A9232AF41C8583D51E8 /* Headers */,
+				980385A35368652E211B9432E365ED1A /* Sources */,
+				639A0FD69CF0A1BE1D6735060D46428B /* Frameworks */,
+				829366062703D77623D03987A90C21D1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FlexDataSource;
-			productName = FlexDataSource;
-			productReference = 1DBD3ED97E78348E3A5AF510095CA968 /* FlexDataSource.framework */;
+			name = fuikit;
+			productName = fuikit;
+			productReference = 1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -342,11 +476,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9A99D40F869DCD0A553D33284ABE683D /* Products */;
+			productRefGroup = 7E83286F6CD19086C7E926FC108B7FBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				981A38299BBD51F93FEB6762FE951665 /* FlexDataSource */,
+				C04700E22229A736E5C110BBF44E6112 /* fuikit */,
 				83E3996C68A8C5BC9A618BB91898C1E0 /* Pods-FlexDataSource_Example */,
 				5D670E1C6A577EF2D78F95CACCF3005A /* Pods-FlexDataSource_Tests */,
 			);
@@ -354,13 +489,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		473B87784A1EB6578E70F69BA707B340 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		68AB512F5322EFDFD18CCFBF9DCF8F00 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,7 +496,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75657E778B05079DFB2FE64D7046DB4E /* Resources */ = {
+		6EBAA46E8BBDB09C6FF7308C5348311F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829366062703D77623D03987A90C21D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85907B2DDEA5BE14B401954DFFCFAF1B /* FUITableViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DB849B3F755D1D66CF9F7D1C118779 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,25 +521,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		362402867757F6A9D560F297E2143680 /* Sources */ = {
+		1F3AB6BC1C63C299BD4F15C3740C86D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73A99F7BAB57D607A2385BE2E0762111 /* FlexDataSource-dummy.m in Sources */,
-				49E4E52C24CEFD4300795432 /* FlexCollectionItem.swift in Sources */,
-				49E4E53024CF014C00795432 /* FlexCollectionSection.swift in Sources */,
-				83DF67179DA11E265679E02F2FB29E49 /* FlexDataSource.swift in Sources */,
-				49E4E52A24CEFC4D00795432 /* FlexCollectionDataSource.swift in Sources */,
-				7FB6A45A8BED2A25EC585DD69D76D36F /* FlexDataSourceItem.swift in Sources */,
-				4DE4E144EDC8339A892A79B820D82D7E /* FlexDataSourceSection.swift in Sources */,
+				773B44A94357B8CC53A77CC4B57E9808 /* Pods-FlexDataSource_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A6E198F833EACBE2DBD5E00C9B2649C /* Sources */ = {
+		611F02EABFB23AC0072B2CF022D29AAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C08F9EDEC6368F98CB0C3E299CDF233 /* Pods-FlexDataSource_Example-dummy.m in Sources */,
+				C6A391C47BF2EEDB0C05199B4C7E6040 /* Array+Flex.swift in Sources */,
+				222208C82C8CE0B31341201AD79CFA08 /* FlexCollectionDataSource.swift in Sources */,
+				BC483EA941F29326F4738B63F9B26104 /* FlexCollectionItem.swift in Sources */,
+				F0C8CC70165446B9E52EFA87D90D6E1C /* FlexCollectionSection.swift in Sources */,
+				31F6D3C8227CE55E6C27B51DD4529DC4 /* FlexDataSource-dummy.m in Sources */,
+				41201F6A5DEFBB5CE36264CBEC4CB7ED /* FlexDataSource.swift in Sources */,
+				02BE540059B4F55D41ACE6A1EBC1A980 /* FlexDataSourceItem.swift in Sources */,
+				F93F030AF5645074BB58E27B36A0EF81 /* FlexDataSourceSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +549,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				61DE04EF51A63B1CD9DC5C587E5588B7 /* Pods-FlexDataSource_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		980385A35368652E211B9432E365ED1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C7EE8CF8E39F3D0256BF086EBF059F /* fuikit-dummy.m in Sources */,
+				72C25C8305948C13C5B53D1B04534C32 /* FUISearchBarDelegate.swift in Sources */,
+				AA72DB7AC4157FB44C1381F469981CB8 /* FUITableViewDataSource.swift in Sources */,
+				491911C688A255140CE674F17C704B3E /* FUITableViewDelegate.swift in Sources */,
+				BAE002DD5B35AA0318D5F5C0B4E13D05 /* FUITableViewViewController.swift in Sources */,
+				9057C7C56566A82F1D7CF400A6E8BA36 /* FUITextFieldDelegate.swift in Sources */,
+				910710F638D86A526F6A990445CC637D /* FUITextViewDelegate.swift in Sources */,
+				9A35CF3DF665480504A24EAD74C593F4 /* FUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,20 +576,34 @@
 			target = 83E3996C68A8C5BC9A618BB91898C1E0 /* Pods-FlexDataSource_Example */;
 			targetProxy = 996C32E62566E530E957A66A3437B2F0 /* PBXContainerItemProxy */;
 		};
-		9C6D4FB97ECDFA8E9F13B69DBBD2D32A /* PBXTargetDependency */ = {
+		325C9B176BE73C0428930DFF9DFDD3D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fuikit;
+			target = C04700E22229A736E5C110BBF44E6112 /* fuikit */;
+			targetProxy = 31FEBF6281542AB2D69660A2B3B8A5B6 /* PBXContainerItemProxy */;
+		};
+		9DBA4C8FCCFFB570D96B2AC3C69FE2B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fuikit;
+			target = C04700E22229A736E5C110BBF44E6112 /* fuikit */;
+			targetProxy = 91C5DC200176685B98947D2F4896E485 /* PBXContainerItemProxy */;
+		};
+		E426029108D8478665B432FF52803569 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlexDataSource;
 			target = 981A38299BBD51F93FEB6762FE951665 /* FlexDataSource */;
-			targetProxy = 3DD86F951E4DB3C682814EF59A2D56F1 /* PBXContainerItemProxy */;
+			targetProxy = C68C842F4F2862986DF65FCCF0A77998 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1F08128EA1619033AF0308A30A3C879D /* Release */ = {
+		1073FDD03E6C6CF374D2A0C3FE1AC877 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A2926975E5CC32BD5A52E1AA99B0D22 /* Pods-FlexDataSource_Example.release.xcconfig */;
+			baseConfigurationReference = 0B293BE9B4629596B0E586E3618842F1 /* Pods-FlexDataSource_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -442,7 +615,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example.modulemap";
@@ -454,109 +627,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		204B3E2629DCE76A09CEFDE9F0FC2AE0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F58E84BEB67BCE3203D063FF9EB39EE2 /* FlexDataSource.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FlexDataSource/FlexDataSource-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlexDataSource/FlexDataSource-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FlexDataSource/FlexDataSource.modulemap";
-				PRODUCT_MODULE_NAME = FlexDataSource;
-				PRODUCT_NAME = FlexDataSource;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8373D845D881E6BD513B9B9A5964C59A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BE56C7D35D586A6DC26380CE2CDCD34 /* Pods-FlexDataSource_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FlexDataSource_Tests/Pods-FlexDataSource_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlexDataSource_Tests/Pods-FlexDataSource_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		ADEBA5EF9A2BF4450E8B517BA21F2A9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2D2381F45FFA2F1E9934AD3F71D8720 /* FlexDataSource.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FlexDataSource/FlexDataSource-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlexDataSource/FlexDataSource-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FlexDataSource/FlexDataSource.modulemap";
-				PRODUCT_MODULE_NAME = FlexDataSource;
-				PRODUCT_NAME = FlexDataSource;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -604,18 +680,258 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		297DF85C1D12B86C6C6F8B0C5F9F8F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2926975E5CC32BD5A52E1AA99B0D22 /* Pods-FlexDataSource_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		41DD67402DF7E0BDBBB01E0D3782302A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2E14686242D8997C6464455A0FF70F8 /* FlexDataSource.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexDataSource/FlexDataSource-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexDataSource/FlexDataSource-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexDataSource/FlexDataSource.modulemap";
+				PRODUCT_MODULE_NAME = FlexDataSource;
+				PRODUCT_NAME = FlexDataSource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D7F0ECB55E48A88FB36A8B02B2B6C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3949F1D75E4F9FFCEAB0596B2BDEC087 /* fuikit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fuikit/fuikit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fuikit/fuikit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fuikit/fuikit.modulemap";
+				PRODUCT_MODULE_NAME = fuikit;
+				PRODUCT_NAME = fuikit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		53C101F6C6CCFFB1BFA3D7C6BAB237AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BE56C7D35D586A6DC26380CE2CDCD34 /* Pods-FlexDataSource_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexDataSource_Tests/Pods-FlexDataSource_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexDataSource_Tests/Pods-FlexDataSource_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74CCDBBE515EAE1650A9EB9399CEE9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF215AF4E69F56AEE8E03482D0231EC /* Pods-FlexDataSource_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexDataSource_Tests/Pods-FlexDataSource_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexDataSource_Tests/Pods-FlexDataSource_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7CEC70EE05CBA0D6A6C16650010A150D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F85AF9103571485EB907A5D9747447 /* FlexDataSource.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexDataSource/FlexDataSource-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexDataSource/FlexDataSource-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexDataSource/FlexDataSource.modulemap";
+				PRODUCT_MODULE_NAME = FlexDataSource;
+				PRODUCT_NAME = FlexDataSource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8350CC88153D9E7A19229DB3E27DD57F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A81F5B74786DFE6671D7E31B3CE95E19 /* fuikit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fuikit/fuikit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fuikit/fuikit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fuikit/fuikit.modulemap";
+				PRODUCT_MODULE_NAME = fuikit;
+				PRODUCT_NAME = fuikit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -666,7 +982,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -679,90 +995,23 @@
 			};
 			name = Debug;
 		};
-		BF7AA25F40DDB096478FCFF8DB2F3AE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B293BE9B4629596B0E586E3618842F1 /* Pods-FlexDataSource_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EF608D370B57A8E27A0A00A7E21E01A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF215AF4E69F56AEE8E03482D0231EC /* Pods-FlexDataSource_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FlexDataSource_Tests/Pods-FlexDataSource_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlexDataSource_Tests/Pods-FlexDataSource_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		3AA5309F7D127358FDC1160A88FB7F7D /* Build configuration list for PBXNativeTarget "FlexDataSource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				41DD67402DF7E0BDBBB01E0D3782302A /* Debug */,
+				7CEC70EE05CBA0D6A6C16650010A150D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68F354603A03400100551F7A3683F6BF /* Build configuration list for PBXNativeTarget "FlexDataSource" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADEBA5EF9A2BF4450E8B517BA21F2A9E /* Debug */,
-				204B3E2629DCE76A09CEFDE9F0FC2AE0 /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -770,17 +1019,26 @@
 		71246F656615D026C3FB6A90DDB8870F /* Build configuration list for PBXNativeTarget "Pods-FlexDataSource_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8373D845D881E6BD513B9B9A5964C59A /* Debug */,
-				EF608D370B57A8E27A0A00A7E21E01A0 /* Release */,
+				53C101F6C6CCFFB1BFA3D7C6BAB237AB /* Debug */,
+				74CCDBBE515EAE1650A9EB9399CEE9FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CFC5EE3777B1422EFF0A47C992F87855 /* Build configuration list for PBXNativeTarget "Pods-FlexDataSource_Example" */ = {
+		7EF8E7A3F838FE67D9174FC78A1188A2 /* Build configuration list for PBXNativeTarget "fuikit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF7AA25F40DDB096478FCFF8DB2F3AE2 /* Debug */,
-				1F08128EA1619033AF0308A30A3C879D /* Release */,
+				8350CC88153D9E7A19229DB3E27DD57F /* Debug */,
+				4D7F0ECB55E48A88FB36A8B02B2B6C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2ED574B74E50BFC04706C364DB0D04 /* Build configuration list for PBXNativeTarget "Pods-FlexDataSource_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1073FDD03E6C6CF374D2A0C3FE1AC877 /* Debug */,
+				297DF85C1D12B86C6C6F8B0C5F9F8F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
