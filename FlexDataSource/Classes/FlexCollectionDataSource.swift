@@ -25,6 +25,16 @@ open class FlexCollectionDataSource: NSObject, UICollectionViewDataSource {
         self.sections = sections
     }
     
+    convenience init(_ items: [FlexCollectionItem]) {
+        let section = FlexCollectionSection(title: nil, items: items)
+        self.init(nil, [section])
+    }
+    
+    convenience init(_ collectionView: UICollectionView? = nil, _ items: [FlexCollectionItem]) {
+        let section = FlexCollectionSection(title: nil, items: items)
+        self.init(collectionView, [section])
+    }
+    
     open func registerCells() {
         if let sections = self.sections, let  collectionView = self.collectionView {
             for section in sections {

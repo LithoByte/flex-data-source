@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlexDataSource'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'FlexDataSource makes it dead simple to create table views with multiple types of cells coexisting.'
-  s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1']
+  s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
 
   s.description      = <<-DESC
 This pod moves configuration from the data source to individual cell model classes. By doing so, it becomes straightforward to mix and match cells within the same UITableView.

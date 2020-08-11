@@ -25,6 +25,16 @@ open class FlexDataSource: NSObject, UITableViewDataSource {
         self.sections = sections
     }
     
+    convenience init(_ items: [FlexDataSourceItem]) {
+        let section = FlexDataSourceSection(title: nil, items: items)
+        self.init(nil, [section])
+    }
+    
+    convenience init(_ tableView: UITableView? = nil, _ items: [FlexDataSourceItem]) {
+        let section = FlexDataSourceSection(title: nil, items: items)
+        self.init(tableView, [section])
+    }
+    
     open func registerCells() {
         if let sections = self.sections, let tableView = self.tableView {
             for section in sections {
