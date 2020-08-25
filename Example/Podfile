@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'FlexDataSource_Example' do
   pod 'FlexDataSource', :path => '../'
+  pod 'fuikit', git: 'https://github.com/ThryvInc/fuikit', branch: 'es/uitvds'
 
   target 'FlexDataSource_Tests' do
     inherit! :search_paths

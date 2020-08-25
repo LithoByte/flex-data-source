@@ -46,15 +46,23 @@ open class FunctionalFlexDataSourceItem<T>: ConcreteFlexDataSourceItem<T> where 
     }
 }
 
-public protocol Tappable {
-    var onTap: () -> Void { get }
-}
-
 open class TappableFunctionalFlexItem<T>: FunctionalFlexDataSourceItem<T>, Tappable where T: UITableViewCell {
     public var onTap: () -> Void
     
     public init(identifier: String, _ configureCell: @escaping (UITableViewCell) -> Void, _ onTap: @escaping () -> Void) {
         self.onTap = onTap
         super.init(identifier: identifier, configureCell)
+    }
+}
+
+open class SwipableItem<T>: TappableFunctionalFlexItem<T>, Swipable where T: UITableViewCell {
+    public var onSwipe: () -> Void
+    
+    public init(identifier: String,
+                _ configureCell: @escaping (UITableViewCell) -> Void,
+                _ onTap: @escaping () -> Void,
+                _ onSwipe: @escaping () -> Void) {
+        self.onSwipe = onSwipe
+        super.init(identifier: identifier, configureCell, onTap)
     }
 }

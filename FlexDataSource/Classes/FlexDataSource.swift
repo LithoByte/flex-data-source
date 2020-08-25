@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import fuikit
 
-open class FlexDataSource: NSObject, UITableViewDataSource {
+open class FlexDataSource: FUITableViewDataSource {
     public var tableView: UITableView? {
         didSet {
             registerCells()
@@ -21,8 +22,16 @@ open class FlexDataSource: NSObject, UITableViewDataSource {
     }
     
     public init(_ tableView: UITableView? = nil, _ sections: [FlexDataSourceSection]? = nil) {
+        super.init()
         self.tableView = tableView
         self.sections = sections
+        
+        onNumberOfSections = { [unowned self] _ in self.sections?.count ?? 0 }
+        onNumberOfRowsInSection = { [unowned self] _, section in self.sections?[section].items?.count ?? 0 }
+        onCellForRowAt = cell(from:forRowAt:)
+        onTitleForHeaderInSection = titleForHeader(on:inSection:)
+        onCanEditRowAt = canEditRow(in:at:)
+        onCommitEditingStyleForRowAt = commitEditingStyleForRow(_:editingStyle:at:)
     }
     
     convenience init(_ items: [FlexDataSourceItem]) {
@@ -56,20 +65,12 @@ open class FlexDataSource: NSObject, UITableViewDataSource {
     
     // MARK: TableViewDataSource
     
-    open func numberOfSections(in tableView: UITableView) -> Int {
-        return sections?.count ?? 0
-    }
-    
-    open func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    open func titleForHeader(on tableView: UITableView, inSection section: Int) -> String? {
         let isSectionView = tableView.delegate?.tableView?(tableView, viewForHeaderInSection: section) != nil
         return isSectionView ? nil : sections?[section].title
     }
     
-    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sections?[section].items?.count ?? 0
-    }
-    
-    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func cell(from tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         if let item = sections?[indexPath.section].items?[indexPath.row] {
             if let cell = tableView.dequeueReusableCell(withIdentifier: item.cellIdentifier()) {
                 item.configureCell(cell)
@@ -77,5 +78,25 @@ open class FlexDataSource: NSObject, UITableViewDataSource {
             }
         }
         return UITableViewCell()
+    }
+}
+
+// MARK: - Swiping
+public extension FlexDataSource {
+    func canEditRow(in tableView: UITableView, at indexPath: IndexPath) -> Bool {
+        if let _ = sections?[indexPath.section].items?[indexPath.row] as? Swipable {
+            return true
+        }
+        return false
+    }
+    
+    func commitEditingStyleForRow(_ tableView: UITableView, editingStyle: UITableViewCell.EditingStyle, at indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if let item = sections?[indexPath.section].items?[indexPath.row] as? Swipable {
+                item.onSwipe()
+                sections?[indexPath.section].items?.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+        }
     }
 }

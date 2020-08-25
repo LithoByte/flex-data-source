@@ -23,7 +23,8 @@ This pod moves configuration from the data source to individual cell model class
   s.source           = { :git => 'https://github.com/ThryvInc/flex-data-source.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/elliot_schrock'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'FlexDataSource/Classes/**/*'
+  s.dependency 'fuikit'
 end
