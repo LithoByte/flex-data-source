@@ -1,28 +1,24 @@
 PODS:
-  - FlexDataSource (0.1.2):
+  - FlexDataSource (0.1.4):
     - fuikit
-  - fuikit (0.0.4)
+  - fuikit (0.0.6)
 
 DEPENDENCIES:
   - FlexDataSource (from `../`)
-  - fuikit (from `https://github.com/ThryvInc/fuikit`, branch `es/uitvds`)
+  - fuikit
+
+SPEC REPOS:
+  trunk:
+    - fuikit
 
 EXTERNAL SOURCES:
   FlexDataSource:
     :path: "../"
-  fuikit:
-    :branch: es/uitvds
-    :git: https://github.com/ThryvInc/fuikit
-
-CHECKOUT OPTIONS:
-  fuikit:
-    :commit: fddefe8f7e1a87a734fb05f472ae3670dccd5800
-    :git: https://github.com/ThryvInc/fuikit
 
 SPEC CHECKSUMS:
-  FlexDataSource: 78c8e3c3bc63735b6451c3ef63bec0bfc4662f09
-  fuikit: 179c236c60b39ef5f666a2329d73aaab3ecb027d
+  FlexDataSource: 047359220b03ad3f26beb0af01cfbe922ba95044
+  fuikit: f810b1ca97a699677c7da50c186350f99cba91d0
 
-PODFILE CHECKSUM: f9b673bda45cf0120cb36917f16e8d28da069721
+PODFILE CHECKSUM: f79c4a84dd3f8990aed5927bf1f64d89d1c2891a
 
 COCOAPODS: 1.9.0
