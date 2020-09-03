@@ -16,11 +16,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   fuikit:
-    :commit: 8ddd115f0a6941f250fcb93f94c360de27832d70
+    :commit: fddefe8f7e1a87a734fb05f472ae3670dccd5800
     :git: https://github.com/ThryvInc/fuikit
 
 SPEC CHECKSUMS:
-  FlexDataSource: 2f30d958806594ebae55138cfe1679a1520e1d78
+  FlexDataSource: 78c8e3c3bc63735b6451c3ef63bec0bfc4662f09
   fuikit: 179c236c60b39ef5f666a2329d73aaab3ecb027d
 
 PODFILE CHECKSUM: f9b673bda45cf0120cb36917f16e8d28da069721

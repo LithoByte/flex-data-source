@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlexDataSource'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'FlexDataSource makes it dead simple to create table views with multiple types of cells coexisting.'
   s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
 
@@ -23,7 +23,8 @@ This pod moves configuration from the data source to individual cell model class
   s.source           = { :git => 'https://github.com/ThryvInc/flex-data-source.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/elliot_schrock'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'FlexDataSource/Classes/**/*'
+  s.dependency 'fuikit'
 end
