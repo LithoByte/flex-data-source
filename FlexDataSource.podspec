@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlexDataSource'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'FlexDataSource makes it dead simple to create table views with multiple types of cells coexisting.'
   s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
 

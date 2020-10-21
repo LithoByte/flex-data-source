@@ -1,5 +1,5 @@
 PODS:
-  - FlexDataSource (0.1.4):
+  - FlexDataSource (0.1.5):
     - fuikit
   - fuikit (0.0.6)
 
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FlexDataSource: 047359220b03ad3f26beb0af01cfbe922ba95044
+  FlexDataSource: cb32f3408cf4eb80767984bcca4fee1d49dcf1ea
   fuikit: f810b1ca97a699677c7da50c186350f99cba91d0
 
 PODFILE CHECKSUM: f79c4a84dd3f8990aed5927bf1f64d89d1c2891a
