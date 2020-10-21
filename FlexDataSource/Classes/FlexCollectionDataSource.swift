@@ -72,3 +72,23 @@ open class FlexCollectionDataSource: NSObject, UICollectionViewDataSource {
         return UICollectionViewCell()
     }
 }
+
+// MARK: - Tapping
+
+public extension FlexCollectionDataSource {
+    func tappableOnSelect(_ collectionView: UICollectionView, _ indexPath: IndexPath) -> Void {
+        collectionView.deselectRow(at: indexPath, animated: true)
+        if let tappable = sections?[indexPath.section].items?[indexPath.row] as? Tappable {
+            tappable.onTap()
+        }
+    }
+    
+    func itemTapOnSelect(onTap: @escaping (FlexDataSourceItem) -> Void) -> (UICollectionView, IndexPath) -> Void {
+        return { collectionView, indexPath in
+            collectionView.deselectRow(at: indexPath, animated: true)
+            if let item = self.sections?[indexPath.section].items?[indexPath.row] {
+                onTap(item)
+            }
+        }
+    }
+}
