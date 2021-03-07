@@ -81,11 +81,13 @@ open class FlexDataSource: FUITableViewDataSource {
     }
 }
 
+public let deselectRow: (UITableView, IndexPath) -> Void = { $0.deselectRow(at: $1, animated: true) }
+
 // MARK: - Tapping
 
 public extension FlexDataSource {
     func tappableOnSelect(_ tableView: UITableView, _ indexPath: IndexPath) -> Void {
-        tableView.deselectRow(at: indexPath, animated: true)
+        deselectRow(tableView, indexPath)
         if let tappable = sections?[indexPath.section].items?[indexPath.row] as? Tappable {
             tappable.onTap()
         }
@@ -93,7 +95,7 @@ public extension FlexDataSource {
     
     func itemTapOnSelect(onTap: @escaping (FlexDataSourceItem) -> Void) -> (UITableView, IndexPath) -> Void {
         return { tableView, indexPath in
-            tableView.deselectRow(at: indexPath, animated: true)
+            deselectRow(tableView, indexPath)
             if let item = self.sections?[indexPath.section].items?[indexPath.row] {
                 onTap(item)
             }
@@ -102,6 +104,7 @@ public extension FlexDataSource {
 }
 
 // MARK: - Swiping
+
 public extension FlexDataSource {
     func canEditRow(in tableView: UITableView, at indexPath: IndexPath) -> Bool {
         if let _ = sections?[indexPath.section].items?[indexPath.row] as? Swipable {
