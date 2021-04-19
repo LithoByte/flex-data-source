@@ -20,7 +20,7 @@ open class FlexHeaderDataSource<T: FlexTableViewHeaderFooterView & UITableViewHe
         }
     }
     
-    public func viewForHeaderInSection(_ tableView: UITableView, inSection section: Int) -> T? {
+    public func viewForHeaderInSection(_ tableView: UITableView, inSection section: Int) -> UITableViewHeaderFooterView? {
         guard let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: T.reuseIdentifier()) as? T, let section = sections?[section] else { return nil }
         configureHeaderView?(view, section)
         return view

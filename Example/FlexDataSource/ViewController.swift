@@ -8,23 +8,31 @@
 
 import UIKit
 import FlexDataSource
+import fuikit
 
 class ViewController: UIViewController {
     var tableView: UITableView!
     
     var numbers: [Int] = [Int]()
-    let dataSource = FlexUntitledDataSource()
+    let dataSource = FlexHeaderDataSource<TableViewHeader>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.frame = view.bounds
+        view.addSubview(tableView)
         numbers.append(contentsOf: 1...17)
-        
+        tableView.sectionHeaderHeight = 60
+        tableView.estimatedSectionHeaderHeight = 60
+        let delegate = FUITableViewDelegate()
         let items = numbers.map { NumberItem(value: $0) }
-        let section = FlexDataSourceSection()
+        let section = FlexDataSourceSection(title: "Numbers")
         section.items = items
-        
         dataSource.tableView = tableView
+        dataSource.configureHeaderView = {
+            $0.title.text = $1.title
+        }
+        delegate.onViewForHeaderInSection = dataSource.viewForHeaderInSection
+        tableView.delegate = delegate
         tableView.dataSource = dataSource
         dataSource.sections = [section]
         tableView.reloadData()
@@ -37,15 +45,6 @@ class ViewController: UIViewController {
         
         tableView = UITableView(frame: view.frame, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(tableView)
-
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
-            tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0),
-            tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0)
-            ])
-        
         super.loadView()
     }
 }
