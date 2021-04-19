@@ -21,8 +21,8 @@ public func itemsToSection(items: [FlexDataSourceItem]) -> FlexDataSourceSection
     return FlexDataSourceSection(items: items)
 }
 
-public func sectionsToDataSource(sections: [FlexDataSourceSection]?) -> FlexDataSource {
-    let ds = FlexDataSource()
+public func sectionsToDataSource(sections: [FlexDataSourceSection]?) -> FlexUntitledDataSource {
+    let ds = FlexUntitledDataSource()
     ds.sections = sections
     return ds
 }

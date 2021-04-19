@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     var tableView: UITableView!
     
     var numbers: [Int] = [Int]()
-    let dataSource = FlexDataSource()
+    let dataSource = FlexUntitledDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
