@@ -14,7 +14,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		60F5B00A42193B3AF34EFF1F /* Pods_FlexDataSource_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B1472C8F94AAAB3D29C47C /* Pods_FlexDataSource_Tests.framework */; };
-		64A29FF9262E3EAA0073F414 /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A29FF8262E3EAA0073F414 /* TableViewHeader.swift */; };
 		89D097AA605F356244FA4433 /* Pods_FlexDataSource_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58498B2EB53A67483D9A3E4 /* Pods_FlexDataSource_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 		607FACE51AFB9204008FA782 /* FlexDataSource_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexDataSource_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		64A29FF8262E3EAA0073F414 /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
 		70B1472C8F94AAAB3D29C47C /* Pods_FlexDataSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexDataSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		879D79256B72CCA876FDF46B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		88E8F3051D2D88F16AFB7F97 /* FlexDataSource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FlexDataSource.podspec; path = ../FlexDataSource.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -103,7 +101,6 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				64A29FF8262E3EAA0073F414 /* TableViewHeader.swift */,
 			);
 			name = "Example for FlexDataSource";
 			path = FlexDataSource;
@@ -340,7 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A29FF9262E3EAA0073F414 /* TableViewHeader.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

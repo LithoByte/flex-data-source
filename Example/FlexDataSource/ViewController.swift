@@ -14,25 +14,17 @@ class ViewController: UIViewController {
     var tableView: UITableView!
     
     var numbers: [Int] = [Int]()
-    let dataSource = FlexHeaderDataSource<TableViewHeader>()
+    let dataSource = FlexTitledDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.frame = view.bounds
         view.addSubview(tableView)
         numbers.append(contentsOf: 1...17)
-        tableView.sectionHeaderHeight = 60
-        tableView.estimatedSectionHeaderHeight = 60
-        let delegate = FUITableViewDelegate()
         let items = numbers.map { NumberItem(value: $0) }
         let section = FlexDataSourceSection(title: "Numbers")
         section.items = items
         dataSource.tableView = tableView
-        dataSource.configureHeaderView = {
-            $0.title.text = $1.title
-        }
-        delegate.onViewForHeaderInSection = dataSource.viewForHeaderInSection
-        tableView.delegate = delegate
         tableView.dataSource = dataSource
         dataSource.sections = [section]
         tableView.reloadData()
