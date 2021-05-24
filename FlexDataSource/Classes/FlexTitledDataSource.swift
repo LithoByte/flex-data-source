@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class FlexTitledDataSource: FlexUntitledDataSource {
+open class FlexTitledDataSource: FlexSimpleDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return onTitleForHeaderInSection(tableView, section)
     }
