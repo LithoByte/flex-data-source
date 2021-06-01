@@ -22,7 +22,7 @@
 		6431743F265C542400BB682B /* Tappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64317434265C542400BB682B /* Tappable.swift */; };
 		64317440265C542400BB682B /* FlexCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64317435265C542400BB682B /* FlexCollectionDataSource.swift */; };
 		64317441265C542400BB682B /* FlexDataSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64317436265C542400BB682B /* FlexDataSourceItem.swift */; };
-		64317442265C542400BB682B /* FlexDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64317437265C542400BB682B /* FlexDataSource.swift */; };
+		64317442265C542400BB682B /* FlexDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64317437265C542400BB682B /* FlexDataSourceProtocol.swift */; };
 		64317443265C542400BB682B /* FlexCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64317438265C542400BB682B /* FlexCollectionSection.swift */; };
 		64317444265C542400BB682B /* FlexCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64317439265C542400BB682B /* FlexCollectionItem.swift */; };
 		89D097AA605F356244FA4433 /* Pods_FlexDataSource_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58498B2EB53A67483D9A3E4 /* Pods_FlexDataSource_Example.framework */; };
@@ -62,7 +62,7 @@
 		64317434265C542400BB682B /* Tappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tappable.swift; sourceTree = "<group>"; };
 		64317435265C542400BB682B /* FlexCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexCollectionDataSource.swift; sourceTree = "<group>"; };
 		64317436265C542400BB682B /* FlexDataSourceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexDataSourceItem.swift; sourceTree = "<group>"; };
-		64317437265C542400BB682B /* FlexDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexDataSource.swift; sourceTree = "<group>"; };
+		64317437265C542400BB682B /* FlexDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexDataSourceProtocol.swift; sourceTree = "<group>"; };
 		64317438265C542400BB682B /* FlexCollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexCollectionSection.swift; sourceTree = "<group>"; };
 		64317439265C542400BB682B /* FlexCollectionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexCollectionItem.swift; sourceTree = "<group>"; };
 		70B1472C8F94AAAB3D29C47C /* Pods_FlexDataSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexDataSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,7 +201,7 @@
 				64317435265C542400BB682B /* FlexCollectionDataSource.swift */,
 				64317439265C542400BB682B /* FlexCollectionItem.swift */,
 				64317438265C542400BB682B /* FlexCollectionSection.swift */,
-				64317437265C542400BB682B /* FlexDataSource.swift */,
+				64317437265C542400BB682B /* FlexDataSourceProtocol.swift */,
 				64317436265C542400BB682B /* FlexDataSourceItem.swift */,
 				64317431265C542400BB682B /* FlexDataSourceSection.swift */,
 				6431742F265C542400BB682B /* FlexSimpleDataSource.swift */,
@@ -418,7 +418,7 @@
 				64317441265C542400BB682B /* FlexDataSourceItem.swift in Sources */,
 				6431743E265C542400BB682B /* FlexTitledDataSource.swift in Sources */,
 				6431743D265C542400BB682B /* Swipeable.swift in Sources */,
-				64317442265C542400BB682B /* FlexDataSource.swift in Sources */,
+				64317442265C542400BB682B /* FlexDataSourceProtocol.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				64317444265C542400BB682B /* FlexCollectionItem.swift in Sources */,
 			);

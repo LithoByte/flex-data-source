@@ -8,7 +8,7 @@
 import UIKit
 import fuikit
 
-open class FlexSimpleDataSource: FUITableViewDataSource, FlexDataSource {
+open class FlexDataSource: FUITableViewDataSource, FlexDataSourceProtocol {
     
     public var tableView: UITableView? {
         didSet {
@@ -44,5 +44,4 @@ open class FlexSimpleDataSource: FUITableViewDataSource, FlexDataSource {
         let section = FlexDataSourceSection(title: nil, items: items)
         self.init(tableView, [section])
     }
-    
 }

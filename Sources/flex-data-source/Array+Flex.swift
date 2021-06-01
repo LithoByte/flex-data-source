@@ -9,7 +9,7 @@ import Foundation
 
 public extension Array where Element: FlexDataSourceItem {
     func flexDataSource() -> FlexDataSource {
-        let ds = FlexSimpleDataSource()
+        let ds = FlexDataSource()
         let section = FlexDataSourceSection(title: nil, items: self)
         ds.sections = [section]
         return ds

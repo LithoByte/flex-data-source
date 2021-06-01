@@ -22,7 +22,7 @@ public func itemsToSection(items: [FlexDataSourceItem]) -> FlexDataSourceSection
 }
 
 public func sectionsToDataSource(sections: [FlexDataSourceSection]?) -> FlexDataSource {
-    let ds = FlexSimpleDataSource()
+    let ds = FlexDataSource()
     ds.sections = sections
     return ds
 }

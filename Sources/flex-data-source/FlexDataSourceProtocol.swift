@@ -1,5 +1,5 @@
 //
-//  FlexDataSource.swift
+//  FlexDataSourceProtocol.swift
 //  FlexDataSource
 //
 //  Created by Calvin Collins on 4/19/21.
@@ -8,12 +8,12 @@
 import Foundation
 import fuikit
 
-public protocol FlexDataSource {
+public protocol FlexDataSourceProtocol {
     var tableView: UITableView? { get set }
     var sections: [FlexDataSourceSection]? { get set }
 }
 
-extension FlexDataSource {
+extension FlexDataSourceProtocol {
     
     public func registerCells() {
         if let sections = self.sections, let tableView = self.tableView {
@@ -56,7 +56,7 @@ extension FlexDataSource {
 
 public let deselectRow: (UITableView, IndexPath) -> Void = { $0.deselectRow(at: $1, animated: true) }
 
-extension FlexDataSource {
+extension FlexDataSourceProtocol {
     public func tappableOnSelect(_ tableView: UITableView, _ indexPath: IndexPath) -> Void {
         deselectRow(tableView, indexPath)
         if let tappable = sections?[indexPath.section].items?[indexPath.row] as? Tappable {
@@ -76,7 +76,7 @@ extension FlexDataSource {
 
 //MARK: - Swiping
 
-extension FlexDataSource {
+extension FlexDataSourceProtocol {
     public func canEditRow(in tableView: UITableView, at indexPath: IndexPath) -> Bool {
         if let _ = sections?[indexPath.section].items?[indexPath.row] as? Swipable {
             return true
