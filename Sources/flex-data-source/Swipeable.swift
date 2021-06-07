@@ -10,3 +10,7 @@ import Foundation
 public protocol Swipable {
     var onSwipe: () -> Void { get }
 }
+
+public func swipe(on swipable: Swipable) {
+    swipable.onSwipe()
+}

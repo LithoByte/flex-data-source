@@ -94,3 +94,10 @@ extension FlexDataSourceProtocol {
         }
     }
 }
+
+//MARK: - Item Access
+extension FlexDataSourceProtocol {
+    public func item(at indexPath: IndexPath) -> FlexDataSourceItem? {
+        return sections?[indexPath.section].items?[indexPath.row]
+    }
+}
