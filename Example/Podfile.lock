@@ -1,5 +1,5 @@
 PODS:
-  - FlexDataSource (0.1.7):
+  - FlexDataSource (0.2.0):
     - fuikit
   - fuikit (0.1.2):
     - fuikit/CoreBluetooth (= 0.1.2)
@@ -20,9 +20,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FlexDataSource: 3b1ce4602902bd7f70821a9e88d3753fd424ae4e
+  FlexDataSource: 7ac68abd6ca54a3c043cad19104644ab25c31842
   fuikit: 18bccda525bba2f46943bdb8ce5def666a560704
 
 PODFILE CHECKSUM: f79c4a84dd3f8990aed5927bf1f64d89d1c2891a
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0
