@@ -26,5 +26,5 @@ This pod moves configuration from the data source to individual cell model class
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'Sources/flex-data-source/**/*.swift'
-  s.dependency 'fuikit'
+  s.dependency 'fuikit/Core'
 end
