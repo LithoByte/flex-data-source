@@ -8,7 +8,7 @@
 import UIKit
 import fuikit
 
-open class FlexDataSource: FUITableViewDataSource, FlexDataSourceProtocol {
+open class FlexDataSource: FPUITableViewDataSource, FlexDataSourceProtocol {
     
     public var tableView: UITableView? {
         didSet {
