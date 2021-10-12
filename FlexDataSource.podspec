@@ -27,4 +27,5 @@ This pod moves configuration from the data source to individual cell model class
 
   s.source_files = 'Sources/flex-data-source/**/*.swift'
   s.dependency 'fuikit/Core'
+  s.dependency 'LithoOperators'
 end

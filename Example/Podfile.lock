@@ -1,6 +1,7 @@
 PODS:
   - FlexDataSource (0.2.0):
     - fuikit/Core
+    - LithoOperators
   - fuikit (0.1.5):
     - fuikit/Core (= 0.1.5)
     - fuikit/CoreBluetooth (= 0.1.5)
@@ -8,10 +9,18 @@ PODS:
   - fuikit/Core (0.1.5)
   - fuikit/CoreBluetooth (0.1.5)
   - fuikit/CoreLocation (0.1.5)
+  - LithoOperators (0.1.4):
+    - Prelude
+  - Prelude (3.0.0)
 
 DEPENDENCIES:
   - FlexDataSource (from `../`)
   - fuikit (from `https://github.com/LithoByte/fuikit`, branch `feature/cjc8/fpui`)
+  - LithoOperators (from `https://github.com/LithoByte/LithoOperators`)
+
+SPEC REPOS:
+  trunk:
+    - Prelude
 
 EXTERNAL SOURCES:
   FlexDataSource:
@@ -19,16 +28,23 @@ EXTERNAL SOURCES:
   fuikit:
     :branch: feature/cjc8/fpui
     :git: https://github.com/LithoByte/fuikit
+  LithoOperators:
+    :git: https://github.com/LithoByte/LithoOperators
 
 CHECKOUT OPTIONS:
   fuikit:
     :commit: d68fce0612db80b5064ee688cf2e416de883cecb
     :git: https://github.com/LithoByte/fuikit
+  LithoOperators:
+    :commit: 180a93436cc4d22e7e4a83ea1509ee67a08d761b
+    :git: https://github.com/LithoByte/LithoOperators
 
 SPEC CHECKSUMS:
-  FlexDataSource: 7d859ae7d182576ec900541a761aa5d4aadc04e6
+  FlexDataSource: 5baca69463a91999f1a548730e3e35f192a619ce
   fuikit: 976080e1c04037e01d14541135a104cb208d8c0d
+  LithoOperators: 8fc0c6a49e34a8d1ca01b777844f58e36c062d9f
+  Prelude: fe4cc0fd961d34edf48fe6b04d05c863449efb0a
 
-PODFILE CHECKSUM: 5913b7204e2e45890a3c6eb471c86cc85677ecb7
+PODFILE CHECKSUM: badb4df0e8f993b371b60d7007a3e0cd68f0fb03
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2
