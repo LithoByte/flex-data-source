@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23D948B52715F9EC0008D371 /* FlexItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D948B42715F9EC0008D371 /* FlexItemsTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		17A017DB2D04524AAF31ED52 /* Pods-FlexDataSource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexDataSource_Example.debug.xcconfig"; path = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		23D948B42715F9EC0008D371 /* FlexItemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexItemsTests.swift; sourceTree = "<group>"; };
 		2B92E7568E578B5DE7E1A3B8 /* Pods-FlexDataSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexDataSource_Example.release.xcconfig"; path = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example.release.xcconfig"; sourceTree = "<group>"; };
 		494C77C1242E6DD200B8C018 /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		607FACD01AFB9204008FA782 /* FlexDataSource_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexDataSource_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				23D948B42715F9EC0008D371 /* FlexItemsTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				23D948B52715F9EC0008D371 /* FlexItemsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
