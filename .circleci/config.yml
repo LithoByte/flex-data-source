@@ -24,7 +24,7 @@ jobs:
           command: cd Example && fastlane scan
           environment:
             SCAN_DEVICE: iPhone 11
-            SCAN_SCHEME: LUX-Example
+            SCAN_SCHEME: FlexDataSource-Example
 
       # Collect XML test results data to show in the UI,
       # and save the same XML files under test-results folder
