@@ -15,7 +15,7 @@ class FlexDataSourceItemTests: XCTestCase {
     
     func testFunctionalFlexDataSourceItem() {
         let identifier = "TableViewCell"
-        let item = FunctionalFlexDataSourceItem<UITableViewCell>(set(\UITableViewCell.backgroundColor, .red))
+        let item = FunctionalFlexDataSourceItem<UITableViewCell>(identifier: identifier, set(\UITableViewCell.backgroundColor, .red))
         let cell = UITableViewCell()
         item.configureCell(cell)
         XCTAssertEqual(cell.backgroundColor, .red)
