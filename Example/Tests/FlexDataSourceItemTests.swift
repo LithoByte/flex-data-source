@@ -11,6 +11,22 @@ import LithoOperators
 @testable import FlexDataSource
 
 class FlexDataSourceItemTests: XCTestCase {
+    
+    class TestConcreteFlexDataSource<T>: ConcreteFlexDataSourceItem<T> where T: UITableViewCell {
+        
+        var configureUICell: (UITableViewCell) -> Void
+        
+        init(identifier: String = "cell", _ configureCell: @escaping (UITableViewCell) -> Void) {
+            self.configureUICell = configureCell
+            super.init(identifier: identifier)
+        }
+        
+    override func configureCell(_ cell: UITableViewCell) {
+            return configureUICell(cell)
+        }
+        
+        
+    }
     // go to FlexDataSourceItems and take a look. We want test all configureCell functions to make sure call what we pass into the constructors ex:
     
     func testFunctionalFlexDataSourceItem() {
@@ -24,6 +40,12 @@ class FlexDataSourceItemTests: XCTestCase {
     
     func testConcreteFlexDataSourceItem() {
         // you will have to subclass this class and override the configureCell method
+        let cellID = "ConcreteCell"
+        let item = TestConcreteFlexDataSource(identifier: cellID, set(\UITableViewCell.backgroundColor, .blue))
+        let cell = UITableViewCell()
+        item.configureCell(cell)
+        XCTAssertEqual(cell.backgroundColor, .blue)
+        XCTAssertEqual(item.cellIdentifier(), cellID)
     }
     
     func testTappableFlexDataSourceItem() {
