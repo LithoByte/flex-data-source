@@ -29,6 +29,7 @@ class FlexDataSourceItemTests: XCTestCase {
     }
     // go to FlexDataSourceItems and take a look. We want test all configureCell functions to make sure call what we pass into the constructors ex:
     
+    
     func testFunctionalFlexDataSourceItem() {
         let identifier = "TableViewCell"
         let item = FunctionalFlexDataSourceItem<UITableViewCell>(identifier: identifier, set(\UITableViewCell.backgroundColor, .red))
@@ -49,12 +50,34 @@ class FlexDataSourceItemTests: XCTestCase {
     }
     
     func testTappableFlexDataSourceItem() {
-        var wasTapped = false
+        var pressed = false
+        let cellID = "Tappable"
+        let cell = UITableViewCell()
+        let item = TappableFunctionalFlexItem<UITableViewCell>(identifier: cellID, set(\UITableViewCell.backgroundColor, .red)) {
+            pressed = true
+        }
+        item.configureCell(cell)
+        item.onTap()
+        XCTAssertEqual(cell.backgroundColor, .red)
+        XCTAssertEqual(item.cellIdentifier(), cellID)
+        XCTAssertTrue(pressed == true)
         // pass a closure to change this value in the constructor, make sure is true after calling onTap
     }
     
     func testSwipableFlexDataSourceItem() {
         var wasSwiped = false
+        var wasTapped = false
+        let cellID = "Swipable"
+        let cell = UITableViewCell()
+        let item = SwipableItem<UITableViewCell>(identifier: cellID, set(\UITableViewCell.backgroundColor, .blue), { wasTapped = true }, {wasSwiped = true})
+        item.configureCell(cell)
+        item.onTap()
+        item.onSwipe()
+        XCTAssertEqual(cell.backgroundColor, .blue)
+        XCTAssertEqual(item.cellIdentifier(), cellID)
+        XCTAssertTrue(wasSwiped == true)
+        XCTAssertTrue(wasTapped == true)
+        
         // repeat for onSwipe
     }
 }
