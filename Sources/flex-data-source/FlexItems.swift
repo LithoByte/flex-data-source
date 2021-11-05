@@ -55,6 +55,23 @@ open class FlexSwipeTapModelItem<T, C>: FlexTappableModelItem<T, C>, Swipable wh
     }
 }
 
+open class FlexGestureModelItem<T, C>: FlexModelItem<T, C> where C: UITableViewCell {
+    public var gestureRecognizer: UIGestureRecognizer?
+    public var onGesture: ((T, UIGestureRecognizer?) -> Void)?
+    
+    override open func configureCell(_ cell: UITableViewCell) {
+        if let recognizer = gestureRecognizer {
+            cell.contentView.removeGestureRecognizer(recognizer)
+            cell.contentView.addGestureRecognizer(recognizer)
+        }
+        super.configureCell(cell)
+    }
+    
+    @objc open func gesturePerformed() {
+        onGesture?(model, gestureRecognizer)
+    }
+}
+
 public func modelItem<T, U: UITableViewCell>(_ configurer: @escaping (T, U) -> Void) -> (T) -> FlexModelItem<T, U> {
     return configurer -*> FlexModelItem.init
 }
