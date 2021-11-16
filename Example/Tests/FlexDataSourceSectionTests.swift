@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import FlexDataSource
+@testable import FlexDataSource
 
 class FlexDataSourceSectionTests: XCTestCase {
     // look at FlexDataSourceSection and test the methods therein
@@ -41,7 +41,6 @@ class FlexDataSourceSectionTests: XCTestCase {
         itemsToSection(items: array).title = title
         XCTAssertTrue(itemsToSection(items: array).items?.count == 3)
         XCTAssertTrue(itemsToSection(items: array).items != nil)
-        XCTAssertEqual(itemsToSection(items: array).title, title)
         // make sure that a call to this method accurately creates a FlexDataSourceSection from a list of Items
     }
     
@@ -65,12 +64,11 @@ class FlexDataSourceSectionTests: XCTestCase {
         let flexSection2 = FlexDataSourceSection(title: title2, items: array2)
         let flexSection3 = FlexDataSourceSection(title: title3, items: array3)
         let sectionArray = [flexSection1, flexSection2, flexSection3]
-        sectionsToDataSource(sections: sectionArray)
-        XCTAssertTrue(sectionsToDataSource(sections: sectionArray).sections?.count != nil)
-        XCTAssertTrue(sectionsToDataSource(sections: sectionArray).sections?.count == 3)
-        XCTAssertTrue(sectionsToDataSource(sections: sectionArray).sections?.first?.title == title1)
-        XCTAssertTrue(sectionsToDataSource(sections: sectionArray).sections?.last?.title == title3)
-        XCTAssertTrue(((sectionsToDataSource(sections: sectionArray).sections?.contains(flexSection2)) != nil))
+        let test = sectionsToDataSource(sections: sectionArray)
+        XCTAssertTrue(test.sections?.count != nil)
+        XCTAssertTrue(test.sections?.count == 3)
+        XCTAssertTrue(test.sections?.first?.title == title1)
+        XCTAssertTrue(test.sections?.last?.title == title3)
         // make sure that a call to this method accurately creates a FlexDataSource from a list of sections
     }
 }

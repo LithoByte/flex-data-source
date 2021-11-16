@@ -24,12 +24,8 @@ class FlexDataSourceItemTests: XCTestCase {
     override func configureCell(_ cell: UITableViewCell) {
             return configureUICell(cell)
         }
-        
-        
     }
     // go to FlexDataSourceItems and take a look. We want test all configureCell functions to make sure call what we pass into the constructors ex:
-    
-    
     func testFunctionalFlexDataSourceItem() {
         let identifier = "TableViewCell"
         let item = FunctionalFlexDataSourceItem<UITableViewCell>(identifier: identifier, set(\UITableViewCell.backgroundColor, .red))
@@ -77,7 +73,6 @@ class FlexDataSourceItemTests: XCTestCase {
         XCTAssertEqual(item.cellIdentifier(), cellID)
         XCTAssertTrue(wasSwiped == true)
         XCTAssertTrue(wasTapped == true)
-        
         // repeat for onSwipe
     }
 }

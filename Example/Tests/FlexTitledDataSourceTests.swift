@@ -7,11 +7,27 @@
 //
 
 import XCTest
+import LithoOperators
+@testable import FlexDataSource
+
 
 class FlexTitledDataSourceTests: XCTestCase {
     // look at FlexTitledDataSource
     
     func testTitleForHeaderIn() {
         // test the UITableViewDataSource method implemented in this class to make sure it returns the right section title for a given section number
+        let flexSection1 = FlexDataSourceSection(title: title1, items: array1)
+        let flexSection2 = FlexDataSourceSection(title: title2, items: array2)
+        let flexSection3 = FlexDataSourceSection(title: title3, items: array3)
+        let sectionArray = [flexSection1, flexSection2, flexSection3]
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), style: .plain)
+        let dataSource = FlexTitledDataSource(tableView, sectionArray)
+        let titleFound1 = dataSource.titleForHeader(on: tableView, inSection: 0)
+        let titleFound2 = dataSource.titleForHeader(on: tableView, inSection: 2)
+        let titleFound3 = dataSource.titleForHeader(on: tableView, inSection: 1)
+        XCTAssertEqual(titleFound1, title1)
+        XCTAssertEqual(titleFound2, title3)
+        XCTAssertEqual(titleFound3, title2)
     }
+    
 }
