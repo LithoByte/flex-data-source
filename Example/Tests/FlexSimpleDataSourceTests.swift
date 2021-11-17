@@ -14,9 +14,21 @@ import LithoOperators
 class FlexDataSourceTests: XCTestCase {
     // look at FlexSimpleDataSource and FlexDataSourceProtocol
     
-    class MyTableViewCell: UITableViewCell {
+    
+    class TestFunctionalFlexDataSourceItem<T>: FunctionalFlexDataSourceItem<T> where T: UITableViewCell {
         
+        var configureUICell: (UITableViewCell) -> Void
+        
+        override init(identifier: String = "cell", _ configureCell: @escaping (UITableViewCell) -> Void) {
+            self.configureUICell = configureCell
+            super.init(identifier: identifier, configureCell)
+        }
+        
+    override func configureCell(_ cell: UITableViewCell) {
+            return configureUICell(cell)
+        }
     }
+  
     func testTitleForHeader() {
         // test the titleForHeaderIn method with a titled FlexDataSourceSection
         let flexSection1 = FlexDataSourceSection(title: title1, items: array1)
@@ -32,7 +44,9 @@ class FlexDataSourceTests: XCTestCase {
     func testConfigureCell() {
 //         make a FlexDataSource with one item and one section, and call the cell(tableView, forRowAt) method, verify cell was configured (set the background color, for example)
         let title1 = "First Section"
-        let type1 = FunctionalFlexDataSourceItem<MyTableViewCell>(identifier: "1", set(\UITableViewCell.backgroundColor, .green))
+        let type1 = TestFunctionalFlexDataSourceItem<UITableViewCell>(identifier: "1", set(\UITableViewCell.backgroundColor, .green))
+        let functionalCell = UITableViewCell()
+        type1.configureCell(functionalCell)
         let array1 = [type1]
         let flexSection1 = FlexDataSourceSection(title: title1, items: array1)
         let sectionArray = [flexSection1]
@@ -40,6 +54,7 @@ class FlexDataSourceTests: XCTestCase {
         let dataSource = FlexDataSource(tableView, sectionArray)
         let cell = dataSource.cell(from: tableView, forRowAt: IndexPath(item: 0, section: 0))
         XCTAssertEqual(cell.backgroundColor, .green)
+//        XCTAssertEqual(dataSource.sections?.first?.items?.first as! UITableViewCell, cell)
     }
     
     func testTappableOnSelect() {
