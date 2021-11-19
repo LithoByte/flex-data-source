@@ -32,15 +32,13 @@ class FlexDataSourceSectionTests: XCTestCase {
     }
     
     func testItemsToSection() {
-        let title = "Items to Section"
         let item1 = ConcreteFlexDataSourceItem<UITableViewCell>(identifier: "1")
         let item2 = ConcreteFlexDataSourceItem<UITableViewCell>(identifier: "2")
         let item3 = ConcreteFlexDataSourceItem<UITableViewCell>(identifier: "3")
         let array: [FlexDataSourceItem] = [item1, item2, item3]
-        itemsToSection(items: array)
-        itemsToSection(items: array).title = title
-        XCTAssertTrue(itemsToSection(items: array).items?.count == 3)
-        XCTAssertTrue(itemsToSection(items: array).items != nil)
+        let itemsToSection = itemsToSection(items: array)
+        XCTAssertTrue(itemsToSection.items?.count == 3)
+        XCTAssertTrue(itemsToSection.items != nil)
         // make sure that a call to this method accurately creates a FlexDataSourceSection from a list of Items
     }
     
