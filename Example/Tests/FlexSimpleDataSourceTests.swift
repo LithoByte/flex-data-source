@@ -12,8 +12,6 @@ import LithoOperators
 
 
 class FlexDataSourceTests: XCTestCase {
-    // look at FlexSimpleDataSource and FlexDataSourceProtocol
-    
     
     class TestFunctionalFlexDataSourceItem<T>: FunctionalFlexDataSourceItem<T> where T: UITableViewCell {
         
@@ -24,13 +22,12 @@ class FlexDataSourceTests: XCTestCase {
             super.init(identifier: identifier, configureCell)
         }
         
-    override func configureCell(_ cell: UITableViewCell) {
+        override func configureCell(_ cell: UITableViewCell) {
             return configureUICell(cell)
         }
     }
   
     func testTitleForHeader() {
-        // test the titleForHeaderIn method with a titled FlexDataSourceSection
         let flexSection1 = FlexDataSourceSection(title: title1, items: array1)
         let flexSection2 = FlexDataSourceSection(title: title2, items: array2)
         let flexSection3 = FlexDataSourceSection(title: title3, items: array3)
@@ -42,7 +39,6 @@ class FlexDataSourceTests: XCTestCase {
     
     
     func testConfigureCell() {
-//         make a FlexDataSource with one item and one section, and call the cell(tableView, forRowAt) method, verify cell was configured (set the background color, for example)
         let title1 = "First Section"
         let type1 = TestFunctionalFlexDataSourceItem<UITableViewCell>(identifier: "1", set(\UITableViewCell.backgroundColor, .green))
         let functionalCell = UITableViewCell()
@@ -52,13 +48,12 @@ class FlexDataSourceTests: XCTestCase {
         let sectionArray = [flexSection1]
         let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), style: .plain)
         let dataSource = FlexDataSource(tableView, sectionArray)
+        dataSource.registerCells()
         let cell = dataSource.cell(from: tableView, forRowAt: IndexPath(item: 0, section: 0))
         XCTAssertEqual(cell.backgroundColor, .green)
-//        XCTAssertEqual(dataSource.sections?.first?.items?.first as! UITableViewCell, cell)
     }
     
     func testTappableOnSelect() {
-        // make a FlexDataSource with one section and one item, that is a TappableFlexDataSourceItem. Use tappableOnSelect to 'tap' the indexPath of the item (Section 0, row 0) and verify that the onTap function was called
         let title1 = "First Section"
         var wasTapped = false
         let type1 = TappableFunctionalFlexItem<UITableViewCell>(identifier: "1", { _ in }, { wasTapped = true })
@@ -72,7 +67,6 @@ class FlexDataSourceTests: XCTestCase {
     }
     
     func testItemTapOnSelect() {
-        // repeat procedure above, use itemTapOnSelect (pass in a method that ignores the item and changes a local variable) and test on the indexPath used for the above test
         let title1 = "First Section"
         var wasTapped = false
         let type1 = TappableFunctionalFlexItem<UITableViewCell>(identifier: "1", { _ in }, { wasTapped = true })
@@ -87,13 +81,12 @@ class FlexDataSourceTests: XCTestCase {
     }
     
     func testCanEditRow() {
-        // use a SwipableFlexDataSourceItem and a TappableFlexDataSourceItem in a FlexDataSource, and test to make sure the canEditRow method returns true for the Swipable, false for the non-Swipable
         let title1 = "First Section"
         let title2 = "Second Section"
-        var wasSwiped = false
+        var wasTapped = false
         var swipableWasSwiped = false
-        let type1 = TappableFunctionalFlexItem<UITableViewCell>(identifier: "1", { _ in }, { wasSwiped = false })
-        let type2 = SwipableItem<UITableViewCell>(identifier: "2", { _ in }, { }, { swipableWasSwiped = true })
+        let type1 = TappableFunctionalFlexItem<UITableViewCell>(identifier: "1", { _ in }, { wasTapped = false })
+        let type2 = SwipableItem<UITableViewCell>(identifier: "2", { _ in }, { swipableWasSwiped = false }, { swipableWasSwiped = true })
         let array1 = [type1]
         let array2 = [type2]
         let flexSection1 = FlexDataSourceSection(title: title1, items: array1)
@@ -103,15 +96,14 @@ class FlexDataSourceTests: XCTestCase {
         let dataSource = FlexDataSource(tableView, sectionArray)
         let ontap = dataSource.canEditRow(in: tableView, at: IndexPath(item: 0, section: 0))
         let onSwipe = dataSource.canEditRow(in: tableView, at: IndexPath(item: 0, section: 1))
+        dataSource.commitEditingStyleForRow(tableView, editingStyle: .delete, at: IndexPath(item: 0, section: 1))
         XCTAssertTrue(ontap == false)
         XCTAssertTrue(onSwipe)
-        XCTAssertTrue(wasSwiped == false)
-//        XCTAssertTrue(swipableWasSwiped)
-        
+        XCTAssertTrue(wasTapped == false)
+        XCTAssertTrue(swipableWasSwiped)
     }
     
     func testItemAt() {
-        // test the item at method to make sure the method produces the right item for the given indexPath
         let title1 = "First Section"
         let title2 = "Second Section"
         var wasTapped = false
@@ -129,11 +121,8 @@ class FlexDataSourceTests: XCTestCase {
         let secondItem = dataSource.item(at: IndexPath(item: 0, section: 1))
         XCTAssertTrue(firstItem is TappableFunctionalFlexItem)
         XCTAssertTrue(secondItem is SwipableItem)
-//        XCTAssertTrue(wasTapped)
-//        XCTAssertTrue(wasSwiped)
     }
 }
-
 let title1 = "First Section"
 let title2 = "Second Section"
 let title3 = "Third Section"

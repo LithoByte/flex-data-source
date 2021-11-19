@@ -33,14 +33,14 @@ class FlexCollectionDataSourceTests: XCTestCase {
     }
     
     func testCellForItemAt() {
-        let flexSection1 = FlexCollectionSection(title: collectionTitle1, items: collectionArray1)
-        let flexSection2 = FlexCollectionSection(title: collectionTitle2, items: collectionArray2)
-        let flexSection3 = FlexCollectionSection(title: collectionTitle3, items: collectionArray3)
-        let sectionArray = [flexSection1, flexSection2, flexSection3]
+        let collectionItem = FunctionalFlexCollectionItem<UICollectionViewCell>(identifier: "1", set(\UICollectionViewCell.backgroundColor, .green))
+        let flexSection1 = FlexCollectionSection(title: collectionTitle1, items: [collectionItem])
+        let sectionArray = [flexSection1]
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), collectionViewLayout: UICollectionViewFlowLayout())
-        let dataSource = FlexCollectionDataSource(collectionView, sectionArray).collectionView(collectionView, cellForItemAt: IndexPath(item: 0, section: 0))
-        XCTAssertTrue(dataSource is UICollectionViewCell)
-        XCTAssertEqual(FlexCollectionDataSource(collectionView, sectionArray).sections?.first?.items?.first as! UICollectionViewCell, dataSource)
+        let dataSource = FlexCollectionDataSource(collectionView, sectionArray)
+        dataSource.registerCells()
+        let cell = dataSource.collectionView(collectionView, cellForItemAt: IndexPath(item: 0, section: 0))
+        XCTAssertEqual(cell.backgroundColor, .green)
     }
     
     func testTappableOnSelect() {

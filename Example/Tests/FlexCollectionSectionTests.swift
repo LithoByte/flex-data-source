@@ -15,12 +15,10 @@ class FlexCollectionSectionTests: XCTestCase {
     func testTitle() {
         let title = "Section Testing"
         let flexSection = FlexCollectionSection(title: title, items: nil)
-        // make sure the title is the one passed into the constructor
         XCTAssertEqual(flexSection.title!, title)
     }
     
     func testItems() {
-        // make sure the items are properly transferred into the section
         let title = "Section Testing"
         let type = ConcreteFlexCollectionItem<UICollectionViewCell>(identifier: "Test")
         let type2 = ConcreteFlexCollectionItem<UICollectionViewCell>(identifier: "Test2")
@@ -40,7 +38,6 @@ class FlexCollectionSectionTests: XCTestCase {
         let arrayTest = collectionItemsToSection(items: array)
         XCTAssertTrue(arrayTest.items != nil)
         XCTAssertTrue(arrayTest.items?.count == 3)
-        // make sure that a call to this method accurately creates a FlexDataSourceSection from a list of Items
     }
     
     func testSectionsToDataSource() {
@@ -54,7 +51,6 @@ class FlexCollectionSectionTests: XCTestCase {
         XCTAssertTrue(test.sections?.first?.title == title1)
         XCTAssertTrue(test.sections?.last?.title == title3)
         XCTAssertTrue((test.sections?.contains(flexSection2)) != nil)
-        // make sure that a call to this method accurately creates a FlexDataSource from a list of sections
     }
 }
 let collectionTitle1 = "First Section"

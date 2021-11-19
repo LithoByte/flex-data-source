@@ -21,11 +21,11 @@ class FlexCollectionItemTests: XCTestCase {
             super.init(identifier: identifier)
         }
         
-    override func configureCell(_ cell: UICollectionViewCell) {
+        override func configureCell(_ cell: UICollectionViewCell) {
             return configureUICell(cell)
         }
     }
-    // go to FlexDataSourceItems and take a look. We want test all configureCell functions to make sure call what we pass into the constructors ex:
+    
     func testFunctionalFlexCollectionItem() {
         let identifier = "Cell"
         let item = FunctionalFlexCollectionItem<UICollectionViewCell>(identifier: identifier, set(\UICollectionViewCell.backgroundColor, .brown))
@@ -59,5 +59,4 @@ class FlexCollectionItemTests: XCTestCase {
         XCTAssertTrue(pressed == true)
         // pass a closure to change this value in the constructor, make sure is true after calling onTap
     }
- 
 }
