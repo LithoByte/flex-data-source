@@ -12,20 +12,6 @@ import LithoOperators
 
 
 class FlexDataSourceTests: XCTestCase {
-    
-    class TestFunctionalFlexDataSourceItem<T>: FunctionalFlexDataSourceItem<T> where T: UITableViewCell {
-        
-        var configureUICell: (UITableViewCell) -> Void
-        
-        override init(identifier: String = "cell", _ configureCell: @escaping (UITableViewCell) -> Void) {
-            self.configureUICell = configureCell
-            super.init(identifier: identifier, configureCell)
-        }
-        
-        override func configureCell(_ cell: UITableViewCell) {
-            return configureUICell(cell)
-        }
-    }
   
     func testTitleForHeader() {
         let flexSection1 = FlexDataSourceSection(title: title1, items: array1)
@@ -40,7 +26,7 @@ class FlexDataSourceTests: XCTestCase {
     
     func testConfigureCell() {
         let title1 = "First Section"
-        let type1 = TestFunctionalFlexDataSourceItem<UITableViewCell>(identifier: "1", set(\UITableViewCell.backgroundColor, .green))
+        let type1 = FunctionalFlexDataSourceItem<UITableViewCell>(identifier: "1", set(\UITableViewCell.backgroundColor, .green))
         let functionalCell = UITableViewCell()
         type1.configureCell(functionalCell)
         let array1 = [type1]

@@ -11,20 +11,6 @@ import LithoOperators
 @testable import FlexDataSource
 
 class FlexDataSourceItemTests: XCTestCase {
-    
-    class TestConcreteFlexDataSource<T>: ConcreteFlexDataSourceItem<T> where T: UITableViewCell {
-        
-        var configureUICell: (UITableViewCell) -> Void
-        
-        init(identifier: String = "cell", _ configureCell: @escaping (UITableViewCell) -> Void) {
-            self.configureUICell = configureCell
-            super.init(identifier: identifier)
-        }
-        
-    override func configureCell(_ cell: UITableViewCell) {
-            return configureUICell(cell)
-        }
-    }
 
     func testFunctionalFlexDataSourceItem() {
         let identifier = "TableViewCell"
@@ -37,7 +23,7 @@ class FlexDataSourceItemTests: XCTestCase {
     
     func testConcreteFlexDataSourceItem() {
         let cellID = "ConcreteCell"
-        let item = TestConcreteFlexDataSource(identifier: cellID, set(\UITableViewCell.backgroundColor, .blue))
+        let item = FunctionalFlexDataSourceItem(identifier: cellID, set(\UITableViewCell.backgroundColor, .blue))
         let cell = UITableViewCell()
         item.configureCell(cell)
         XCTAssertEqual(cell.backgroundColor, .blue)

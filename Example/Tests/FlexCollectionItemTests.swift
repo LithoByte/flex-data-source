@@ -11,20 +11,6 @@ import LithoOperators
 @testable import FlexDataSource
 
 class FlexCollectionItemTests: XCTestCase {
-    // repeat the tests performed for FlexDataSourceItem with their analogous FlexCollectionItem
-    class TestConcreteFlexCollectionItem<T>: ConcreteFlexCollectionItem<T> where T: UICollectionViewCell {
-        
-        var configureUICell: (UICollectionViewCell) -> Void
-        
-        init(identifier: String = "cell", _ configureCell: @escaping (UICollectionViewCell) -> Void) {
-            self.configureUICell = configureCell
-            super.init(identifier: identifier)
-        }
-        
-        override func configureCell(_ cell: UICollectionViewCell) {
-            return configureUICell(cell)
-        }
-    }
     
     func testFunctionalFlexCollectionItem() {
         let identifier = "Cell"
@@ -36,10 +22,10 @@ class FlexCollectionItemTests: XCTestCase {
     }
     
     func testConcreteFlexCollectionItem() {
-        // you will have to subclass this class and override the configureCell method
         let cellID = "ConcreteCell"
-        let item = TestConcreteFlexCollectionItem<UICollectionViewCell>(identifier: cellID, set(\UITableViewCell.backgroundColor, .blue))
+        let item = ConcreteFlexCollectionItem<UICollectionViewCell>(identifier: cellID)
         let cell = UICollectionViewCell()
+        cell.backgroundColor = .blue
         item.configureCell(cell)
         XCTAssertEqual(cell.backgroundColor, .blue)
         XCTAssertEqual(item.cellIdentifier(), cellID)
@@ -57,6 +43,5 @@ class FlexCollectionItemTests: XCTestCase {
         XCTAssertEqual(cell.backgroundColor, .red)
         XCTAssertEqual(item.cellIdentifier(), cellID)
         XCTAssertTrue(pressed == true)
-        // pass a closure to change this value in the constructor, make sure is true after calling onTap
     }
 }

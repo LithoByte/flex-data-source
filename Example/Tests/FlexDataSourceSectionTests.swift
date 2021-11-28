@@ -10,16 +10,13 @@ import XCTest
 @testable import FlexDataSource
 
 class FlexDataSourceSectionTests: XCTestCase {
-    // look at FlexDataSourceSection and test the methods therein
     func testTitle() {
         let title = "Section Testing"
         let flexSection = FlexDataSourceSection(title: title, items: nil)
-        // make sure the title is the one passed into the constructor
         XCTAssertEqual(flexSection.title!, title)
     }
     
     func testItems() {
-        // make sure the items are properly transferred into the section
         let title = "Section Testing"
         let type = ConcreteFlexDataSourceItem<UITableViewCell>(identifier: "Test")
         let type2 = ConcreteFlexDataSourceItem<UITableViewCell>(identifier: "Test2")
@@ -39,7 +36,6 @@ class FlexDataSourceSectionTests: XCTestCase {
         let itemsToSection = itemsToSection(items: array)
         XCTAssertTrue(itemsToSection.items?.count == 3)
         XCTAssertTrue(itemsToSection.items != nil)
-        // make sure that a call to this method accurately creates a FlexDataSourceSection from a list of Items
     }
     
     func testSectionsToDataSource() {
@@ -67,6 +63,5 @@ class FlexDataSourceSectionTests: XCTestCase {
         XCTAssertTrue(test.sections?.count == 3)
         XCTAssertTrue(test.sections?.first?.title == title1)
         XCTAssertTrue(test.sections?.last?.title == title3)
-        // make sure that a call to this method accurately creates a FlexDataSource from a list of sections
     }
 }
