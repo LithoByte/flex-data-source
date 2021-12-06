@@ -18,8 +18,9 @@ class FlexCollectionDataSourceTests: XCTestCase {
         let flexSection3 = FlexCollectionSection(title: collectionTitle3, items: collectionArray3)
         let sectionArray = [flexSection1, flexSection2, flexSection3]
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), collectionViewLayout: UICollectionViewFlowLayout())
-        let dataSource = FlexCollectionDataSource(collectionView, sectionArray).numberOfSections(in: collectionView)
-        XCTAssertEqual(dataSource, 3)
+        let dataSource = FlexCollectionDataSource(collectionView, sectionArray)
+        let sectionData = dataSource.numberOfSections(in: collectionView)
+        XCTAssertEqual(sectionData, 3)
     }
     
     func testNumberOfSectionsIn() {
@@ -28,8 +29,9 @@ class FlexCollectionDataSourceTests: XCTestCase {
         let flexSection3 = FlexCollectionSection(title: collectionTitle3, items: collectionArray3)
         let sectionArray = [flexSection1, flexSection2, flexSection3]
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), collectionViewLayout: UICollectionViewFlowLayout())
-        let dataSource = FlexCollectionDataSource(collectionView, sectionArray).collectionView(collectionView, numberOfItemsInSection: 1)
-        XCTAssertEqual(dataSource, 3)
+        let dataSource = FlexCollectionDataSource(collectionView, sectionArray)
+        let collectionData = dataSource.collectionView(collectionView, numberOfItemsInSection: 1)
+        XCTAssertEqual(collectionData, 3)
     }
     
     func testCellForItemAt() {

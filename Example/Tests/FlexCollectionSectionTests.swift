@@ -26,7 +26,7 @@ class FlexCollectionSectionTests: XCTestCase {
         let array: [FlexCollectionItem]? = [type, type2, type3]
         let flexSection = FlexCollectionSection(title: title, items: array)
         XCTAssertEqual(flexSection.title, title)
-        XCTAssertTrue(flexSection.items != nil)
+        XCTAssertNotNil(flexSection.items)
         XCTAssertEqual(flexSection.items?.count, 3)
     }
     
@@ -36,8 +36,8 @@ class FlexCollectionSectionTests: XCTestCase {
         let item3 = ConcreteFlexCollectionItem<UICollectionViewCell>(identifier: "3")
         let array: [FlexCollectionItem] = [item1, item2, item3]
         let arrayTest = collectionItemsToSection(items: array)
-        XCTAssertTrue(arrayTest.items != nil)
-        XCTAssertTrue(arrayTest.items?.count == 3)
+        XCTAssertNotNil(arrayTest.items)
+        XCTAssertEqual(arrayTest.items?.count, 3)
     }
     
     func testSectionsToDataSource() {
@@ -46,11 +46,11 @@ class FlexCollectionSectionTests: XCTestCase {
         let flexSection3 = FlexCollectionSection(title: collectionTitle3, items: collectionArray3)
         let sectionArray = [flexSection1, flexSection2, flexSection3]
         let test = collectionSectionsToDataSource(sections: sectionArray)
-        XCTAssertTrue(test.sections?.count != nil)
-        XCTAssertTrue(test.sections?.count == 3)
-        XCTAssertTrue(test.sections?.first?.title == title1)
-        XCTAssertTrue(test.sections?.last?.title == title3)
-        XCTAssertTrue((test.sections?.contains(flexSection2)) != nil)
+        XCTAssertNotNil(test.sections?.count)
+        XCTAssertEqual(test.sections?.count, 3)
+        XCTAssertEqual(test.sections?.first?.title, title1)
+        XCTAssertEqual(test.sections?.last?.title, title3)
+        XCTAssertNotNil((test.sections?.contains(flexSection2)))
     }
 }
 let collectionTitle1 = "First Section"

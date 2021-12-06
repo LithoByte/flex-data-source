@@ -83,9 +83,9 @@ class FlexDataSourceTests: XCTestCase {
         let ontap = dataSource.canEditRow(in: tableView, at: IndexPath(item: 0, section: 0))
         let onSwipe = dataSource.canEditRow(in: tableView, at: IndexPath(item: 0, section: 1))
         dataSource.commitEditingStyleForRow(tableView, editingStyle: .delete, at: IndexPath(item: 0, section: 1))
-        XCTAssertTrue(ontap == false)
+        XCTAssertFalse(ontap)
         XCTAssertTrue(onSwipe)
-        XCTAssertTrue(wasTapped == false)
+        XCTAssertFalse(wasTapped)
         XCTAssertTrue(swipableWasSwiped)
     }
     

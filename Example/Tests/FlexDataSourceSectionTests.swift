@@ -24,7 +24,7 @@ class FlexDataSourceSectionTests: XCTestCase {
         let array: [FlexDataSourceItem]? = [type, type2, type3]
         let flexSection = FlexDataSourceSection(title: title, items: array)
         XCTAssertEqual(flexSection.title, title)
-        XCTAssertTrue(flexSection.items != nil)
+        XCTAssertNotNil(flexSection.items)
         XCTAssertEqual(flexSection.items?.count, 3)
     }
     
@@ -35,7 +35,7 @@ class FlexDataSourceSectionTests: XCTestCase {
         let array: [FlexDataSourceItem] = [item1, item2, item3]
         let itemsToSection = itemsToSection(items: array)
         XCTAssertTrue(itemsToSection.items?.count == 3)
-        XCTAssertTrue(itemsToSection.items != nil)
+        XCTAssertNotNil(itemsToSection.items)
     }
     
     func testSectionsToDataSource() {
@@ -59,8 +59,8 @@ class FlexDataSourceSectionTests: XCTestCase {
         let flexSection3 = FlexDataSourceSection(title: title3, items: array3)
         let sectionArray = [flexSection1, flexSection2, flexSection3]
         let test = sectionsToDataSource(sections: sectionArray)
-        XCTAssertTrue(test.sections?.count != nil)
-        XCTAssertTrue(test.sections?.count == 3)
+        XCTAssertNotNil(test.sections?.count)
+        XCTAssertEqual(test.sections?.count, 3)
         XCTAssertTrue(test.sections?.first?.title == title1)
         XCTAssertTrue(test.sections?.last?.title == title3)
     }
