@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		23D948B52715F9EC0008D371 /* FlexItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D948B42715F9EC0008D371 /* FlexItemsTests.swift */; };
+		23D94939271A23060008D371 /* FlexDataSourceItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D94938271A23060008D371 /* FlexDataSourceItemTests.swift */; };
+		23D9493B271A25BA0008D371 /* FlexDataSourceSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9493A271A25BA0008D371 /* FlexDataSourceSectionTests.swift */; };
+		23D9493D271A26DA0008D371 /* FlexSimpleDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9493C271A26DA0008D371 /* FlexSimpleDataSourceTests.swift */; };
+		23D9493F271A29730008D371 /* FlexTitledDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9493E271A29730008D371 /* FlexTitledDataSourceTests.swift */; };
+		23D94941271A29CE0008D371 /* FlexCollectionItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D94940271A29CE0008D371 /* FlexCollectionItemTests.swift */; };
+		23D94943271A2A0B0008D371 /* FlexCollectionSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D94942271A2A0B0008D371 /* FlexCollectionSectionTests.swift */; };
+		23D94945271A2A1E0008D371 /* FlexCollectionDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D94944271A2A1E0008D371 /* FlexCollectionDataSourceTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		60F5B00A42193B3AF34EFF1F /* Pods_FlexDataSource_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B1472C8F94AAAB3D29C47C /* Pods_FlexDataSource_Tests.framework */; };
 		6431743A265C542400BB682B /* FlexSimpleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6431742F265C542400BB682B /* FlexSimpleDataSource.swift */; };
 		6431743B265C542400BB682B /* Array+Flex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64317430265C542400BB682B /* Array+Flex.swift */; };
@@ -43,6 +49,13 @@
 		17A017DB2D04524AAF31ED52 /* Pods-FlexDataSource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexDataSource_Example.debug.xcconfig"; path = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		23D948B42715F9EC0008D371 /* FlexItemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexItemsTests.swift; sourceTree = "<group>"; };
 		23D949372718EFCF0008D371 /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = config.yml; sourceTree = "<group>"; };
+		23D94938271A23060008D371 /* FlexDataSourceItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexDataSourceItemTests.swift; sourceTree = "<group>"; };
+		23D9493A271A25BA0008D371 /* FlexDataSourceSectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexDataSourceSectionTests.swift; sourceTree = "<group>"; };
+		23D9493C271A26DA0008D371 /* FlexSimpleDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexSimpleDataSourceTests.swift; sourceTree = "<group>"; };
+		23D9493E271A29730008D371 /* FlexTitledDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexTitledDataSourceTests.swift; sourceTree = "<group>"; };
+		23D94940271A29CE0008D371 /* FlexCollectionItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexCollectionItemTests.swift; sourceTree = "<group>"; };
+		23D94942271A2A0B0008D371 /* FlexCollectionSectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexCollectionSectionTests.swift; sourceTree = "<group>"; };
+		23D94944271A2A1E0008D371 /* FlexCollectionDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexCollectionDataSourceTests.swift; sourceTree = "<group>"; };
 		2B92E7568E578B5DE7E1A3B8 /* Pods-FlexDataSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexDataSource_Example.release.xcconfig"; path = "Target Support Files/Pods-FlexDataSource_Example/Pods-FlexDataSource_Example.release.xcconfig"; sourceTree = "<group>"; };
 		494C77C1242E6DD200B8C018 /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		607FACD01AFB9204008FA782 /* FlexDataSource_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexDataSource_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +67,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* FlexDataSource_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexDataSource_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6431742A265C53D800BB682B /* flex_data_sourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flex_data_sourceTests.swift; sourceTree = "<group>"; };
 		6431742E265C53D800BB682B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		6431742F265C542400BB682B /* FlexSimpleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexSimpleDataSource.swift; sourceTree = "<group>"; };
@@ -157,9 +169,15 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
 				23D948B42715F9EC0008D371 /* FlexItemsTests.swift */,
+				23D94938271A23060008D371 /* FlexDataSourceItemTests.swift */,
+				23D9493A271A25BA0008D371 /* FlexDataSourceSectionTests.swift */,
+				23D9493C271A26DA0008D371 /* FlexSimpleDataSourceTests.swift */,
+				23D9493E271A29730008D371 /* FlexTitledDataSourceTests.swift */,
+				23D94940271A29CE0008D371 /* FlexCollectionItemTests.swift */,
+				23D94942271A2A0B0008D371 /* FlexCollectionSectionTests.swift */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
+				23D94944271A2A1E0008D371 /* FlexCollectionDataSourceTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -446,8 +464,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				23D94939271A23060008D371 /* FlexDataSourceItemTests.swift in Sources */,
+				23D9493D271A26DA0008D371 /* FlexSimpleDataSourceTests.swift in Sources */,
+				23D9493B271A25BA0008D371 /* FlexDataSourceSectionTests.swift in Sources */,
 				23D948B52715F9EC0008D371 /* FlexItemsTests.swift in Sources */,
+				23D9493F271A29730008D371 /* FlexTitledDataSourceTests.swift in Sources */,
+				23D94941271A29CE0008D371 /* FlexCollectionItemTests.swift in Sources */,
+				23D94943271A2A0B0008D371 /* FlexCollectionSectionTests.swift in Sources */,
+				23D94945271A2A1E0008D371 /* FlexCollectionDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
