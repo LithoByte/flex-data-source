@@ -55,6 +55,23 @@ open class FlexButtonTappableModelCollectionItem<T, C>: FlexTappableModelCollect
     }
 }
 
+open class FlexGestureModelCollectionItem<T, C>: FlexModelCollectionItem<T, C> where C: UICollectionViewCell {
+    public var gestureRecognizer: UIGestureRecognizer?
+    public var onGesture: ((T, UIGestureRecognizer?) -> Void)?
+    
+    override open func configureCell(_ cell: UICollectionViewCell) {
+        if let recognizer = gestureRecognizer {
+            cell.contentView.removeGestureRecognizer(recognizer)
+            cell.contentView.addGestureRecognizer(recognizer)
+        }
+        super.configureCell(cell)
+    }
+    
+    @objc open func gesturePerformed() {
+        onGesture?(model, gestureRecognizer)
+    }
+}
+
 public func modelItem<T, U: UICollectionViewCell>(_ configurer: @escaping (T, U) -> Void) -> (T) -> FlexModelCollectionItem<T, U> {
     return configurer -*> FlexModelCollectionItem.init
 }
