@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import fuikit
 
-open class FlexCollectionDataSource: NSObject, UICollectionViewDataSource {
+open class FlexCollectionDataSource: FPUICollectionViewDatasource {
+    
     public var collectionView: UICollectionView? {
         didSet {
             registerCells()
@@ -21,8 +23,14 @@ open class FlexCollectionDataSource: NSObject, UICollectionViewDataSource {
     }
     
     public init(_ collectionView: UICollectionView? = nil, _ sections: [FlexCollectionSection]? = nil) {
+        super.init()
         self.collectionView = collectionView
         self.sections = sections
+        
+        onNumberOfItemsInSections = { [unowned self] _ , section in sections?[section].items?.count ?? 0 }
+        onNumberOfSections = { [unowned self] _ in return sections?.count ?? 0 }
+        onCellForItemAt = collectionView(_:cellForItemAt:)
+        
     }
     
     convenience init(_ items: [FlexCollectionItem]) {
@@ -53,24 +61,6 @@ open class FlexCollectionDataSource: NSObject, UICollectionViewDataSource {
         }
     }
     
-    // MARK: CollectionViewDataSource
-    
-    open func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return sections?.count ?? 0
-    }
-    
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sections?[section].items?.count ?? 0
-    }
-    
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let item = sections?[indexPath.section].items?[indexPath.row] {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: item.cellIdentifier(), for: indexPath)
-            item.configureCell(cell)
-            return cell
-        }
-        return UICollectionViewCell()
-    }
 }
 
 // MARK: - Tapping
