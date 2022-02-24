@@ -27,8 +27,8 @@ open class FlexCollectionDataSource: FPUICollectionViewDatasource {
         self.collectionView = collectionView
         self.sections = sections
         
-        onNumberOfItemsInSections = { [unowned self] _ , section in sections?[section].items?.count ?? 0 }
-        onNumberOfSections = { [unowned self] _ in return sections?.count ?? 0 }
+        onNumberOfItemsInSections = { [unowned self] _ , section in self.sections?[section].items?.count ?? 0 }
+        onNumberOfSections = { [unowned self] _ in return self.sections?.count ?? 0 }
         onCellForItemAt = collectionView(_:cellForItemAt:)
         
     }
