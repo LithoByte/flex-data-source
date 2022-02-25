@@ -29,7 +29,13 @@ open class FlexCollectionDataSource: FPUICollectionViewDatasource {
         
         onNumberOfItemsInSections = { [unowned self] _ , section in self.sections?[section].items?.count ?? 0 }
         onNumberOfSections = { [unowned self] _ in return self.sections?.count ?? 0 }
-        onCellForItemAt = collectionView(_:cellForItemAt:)
+        onCellForItemAt = {[unowned self] cellView, individualSection in
+            if let item = self.sections?[0].items?[0] {
+                let cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: item.cellIdentifier(), for: IndexPath(item:0, section:0))
+                return cell!
+            }
+            return UICollectionViewCell()
+        }
         
     }
     
