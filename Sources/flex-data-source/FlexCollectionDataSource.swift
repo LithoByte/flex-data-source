@@ -29,14 +29,7 @@ open class FlexCollectionDataSource: FPUICollectionViewDatasource {
         
         onNumberOfItemsInSections = { [unowned self] _ , section in self.sections?[section].items?.count ?? 0 }
         onNumberOfSections = { [unowned self] _ in return self.sections?.count ?? 0 }
-        onCellForItemAt = {[unowned self] cellView, individualSection in
-            if let item = self.sections?[0].items?[0] {
-                let cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: item.cellIdentifier(), for: IndexPath(item:0, section:0))
-                return cell!
-            }
-            return UICollectionViewCell()
-        }
-        
+        onCellForItemAt = cell(collectionView:_:)
     }
     
     convenience init(_ items: [FlexCollectionItem]) {
@@ -67,6 +60,14 @@ open class FlexCollectionDataSource: FPUICollectionViewDatasource {
         }
     }
     
+    open func cell(collectionView: UICollectionView, _ indexPath: IndexPath) -> UICollectionViewCell {
+        if let item = sections?[indexPath.section].items?[indexPath.row] {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: item.cellIdentifier(), for: indexPath)
+                item.configureCell(cell)
+                return cell
+        }
+        return UICollectionViewCell()
+    }
 }
 
 // MARK: - Tapping
