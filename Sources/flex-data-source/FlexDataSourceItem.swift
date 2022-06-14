@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LithoOperators
 
 public protocol FlexDataSourceItem {
     func cellIdentifier() -> String
@@ -13,7 +14,7 @@ public protocol FlexDataSourceItem {
     func configureCell(_ cell: UITableViewCell)
 }
 
-open class ConcreteFlexDataSourceItem<T>: FlexDataSourceItem where T: UITableViewCell {
+open class ConcreteFlexDataSourceItem<C>: FlexDataSourceItem where C: UITableViewCell {
     private let identifier: String
     
     public init(identifier: String) {
@@ -25,7 +26,7 @@ open class ConcreteFlexDataSourceItem<T>: FlexDataSourceItem where T: UITableVie
     }
     
     open func cellClass() -> UITableViewCell.Type {
-        return T.self
+        return C.self
     }
     
     open func configureCell(_ cell: UITableViewCell) {
@@ -33,7 +34,7 @@ open class ConcreteFlexDataSourceItem<T>: FlexDataSourceItem where T: UITableVie
     }
 }
 
-open class FunctionalFlexDataSourceItem<T>: ConcreteFlexDataSourceItem<T> where T: UITableViewCell {
+open class FunctionalFlexDataSourceItem<C>: ConcreteFlexDataSourceItem<C> where C: UITableViewCell {
     private let configureCell: (UITableViewCell) -> Void
 
     public init(identifier: String = "cell", _ configureCell: @escaping (UITableViewCell) -> Void) {
@@ -46,22 +47,22 @@ open class FunctionalFlexDataSourceItem<T>: ConcreteFlexDataSourceItem<T> where 
     }
 }
 
-open class TappableFunctionalFlexItem<T>: FunctionalFlexDataSourceItem<T>, Tappable where T: UITableViewCell {
-    public var onTap: () -> Void
+open class TappableFunctionalFlexItem<C>: FunctionalFlexDataSourceItem<C>, Tappable where C: UITableViewCell {
+    public var onTap: (() -> Void)?
     
-    public init(identifier: String, _ configureCell: @escaping (UITableViewCell) -> Void, _ onTap: @escaping () -> Void) {
+    public init(identifier: String, _ configureCell: @escaping (UITableViewCell) -> Void, _ onTap: (() -> Void)?) {
         self.onTap = onTap
         super.init(identifier: identifier, configureCell)
     }
 }
 
-open class SwipableItem<T>: TappableFunctionalFlexItem<T>, Swipable where T: UITableViewCell {
-    public var onSwipe: () -> Void
+open class SwipableItem<C>: TappableFunctionalFlexItem<C>, Swipable where C: UITableViewCell {
+    public var onSwipe: (() -> Void)?
     
     public init(identifier: String,
                 _ configureCell: @escaping (UITableViewCell) -> Void,
-                _ onTap: @escaping () -> Void,
-                _ onSwipe: @escaping () -> Void) {
+                _ onTap: (() -> Void)?,
+                _ onSwipe: (() -> Void)?) {
         self.onSwipe = onSwipe
         super.init(identifier: identifier, configureCell, onTap)
     }

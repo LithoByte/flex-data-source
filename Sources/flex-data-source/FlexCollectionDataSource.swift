@@ -86,7 +86,7 @@ public extension FlexCollectionDataSource {
     func tappableOnSelect(_ collectionView: UICollectionView, _ indexPath: IndexPath) -> Void {
         collectionView.deselectItem(at: indexPath, animated: true)
         if let tappable = sections?[indexPath.section].items?[indexPath.row] as? Tappable {
-            tappable.onTap()
+            tappable.onTap?()
         }
     }
     

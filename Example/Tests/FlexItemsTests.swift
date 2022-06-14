@@ -33,10 +33,10 @@ class FlexItemTests: XCTestCase {
         }
         let configurer: (Human, UITableViewCell) -> Void = setMainLabel
         var wasTapped: Bool = false
-        let item = FlexTappableModelItem<Human, UITableViewCell>(model: Human(id: 123, name: "Calvin Collins"), configurer: configurer, tap: { _ in
+        let item = FlexModelItem<Human, UITableViewCell>(model: Human(id: 123, name: "Calvin Collins"), configurer: configurer, tap: { _ in
             wasTapped = true
         })
-        item.onTap()
+        item.onTap?()
         XCTAssert(wasTapped)
     }
     
@@ -47,13 +47,13 @@ class FlexItemTests: XCTestCase {
         let configurer: (Human, UITableViewCell) -> Void = setMainLabel
         var wasSwiped: Bool = false
         var wasTapped: Bool = false
-        let item = FlexSwipeTapModelItem<Human, UITableViewCell>(model: Human(id: 123, name: "Calvin Collins"), configurer: configurer, tap: { _ in
+        let item = FlexModelItem<Human, UITableViewCell>(model: Human(id: 123, name: "Calvin Collins"), configurer: configurer, tap: { _ in
                 wasTapped = true
         }, swipe: { _ in
             wasSwiped = true
         })
-        item.onSwipe()
-        item.onTap()
+        item.onSwipe?()
+        item.onTap?()
         XCTAssert(wasTapped && wasSwiped)
     }
 }

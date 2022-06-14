@@ -11,7 +11,6 @@ import LithoOperators
 @testable import FlexDataSource
 
 class FlexDataSourceItemTests: XCTestCase {
-
     func testFunctionalFlexDataSourceItem() {
         let identifier = "TableViewCell"
         let item = FunctionalFlexDataSourceItem<UITableViewCell>(identifier: identifier, set(\UITableViewCell.backgroundColor, .red))
@@ -38,7 +37,7 @@ class FlexDataSourceItemTests: XCTestCase {
             pressed = true
         }
         item.configureCell(cell)
-        item.onTap()
+        item.onTap?()
         XCTAssertEqual(cell.backgroundColor, .red)
         XCTAssertEqual(item.cellIdentifier(), cellID)
         XCTAssertTrue(pressed)
@@ -51,8 +50,8 @@ class FlexDataSourceItemTests: XCTestCase {
         let cell = UITableViewCell()
         let item = SwipableItem<UITableViewCell>(identifier: cellID, set(\UITableViewCell.backgroundColor, .blue), { wasTapped = true }, {wasSwiped = true})
         item.configureCell(cell)
-        item.onTap()
-        item.onSwipe()
+        item.onTap?()
+        item.onSwipe?()
         XCTAssertEqual(cell.backgroundColor, .blue)
         XCTAssertEqual(item.cellIdentifier(), cellID)
         XCTAssertTrue(wasSwiped == true)

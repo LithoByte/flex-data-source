@@ -47,7 +47,7 @@ open class FunctionalFlexCollectionItem<T>: ConcreteFlexCollectionItem<T> where 
 }
 
 open class TappableFlexCollectionItem<T>: FunctionalFlexCollectionItem<T>, Tappable where T: UICollectionViewCell {
-    public var onTap: () -> Void
+    public var onTap: (() -> Void)?
     
     public init(identifier: String, _ configureCell: @escaping (UICollectionViewCell) -> Void, _ onTap: @escaping () -> Void) {
         self.onTap = onTap

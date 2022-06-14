@@ -59,8 +59,8 @@ public let deselectRow: (UITableView, IndexPath) -> Void = { $0.deselectRow(at: 
 extension FlexDataSourceProtocol {
     public func tappableOnSelect(_ tableView: UITableView, _ indexPath: IndexPath) -> Void {
         deselectRow(tableView, indexPath)
-        if let tappable = sections?[indexPath.section].items?[indexPath.row] as? Tappable {
-            tappable.onTap()
+        if let tappable = sections?[indexPath.section].items?[indexPath.row] as? Tappable, let tap = tappable.onTap {
+            tap()
         }
     }
     
@@ -86,8 +86,8 @@ extension FlexDataSourceProtocol {
     
     public func commitEditingStyleForRow(_ tableView: UITableView, editingStyle: UITableViewCell.EditingStyle, at indexPath: IndexPath) {
         if editingStyle == .delete {
-            if let item = sections?[indexPath.section].items?[indexPath.row] as? Swipable {
-                item.onSwipe()
+            if let item = sections?[indexPath.section].items?[indexPath.row] as? Swipable, let swipe = item.onSwipe {
+                swipe()
                 sections?[indexPath.section].items?.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: .fade)
             }
