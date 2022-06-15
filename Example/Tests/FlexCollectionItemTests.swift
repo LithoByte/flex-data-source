@@ -39,7 +39,7 @@ class FlexCollectionItemTests: XCTestCase {
             pressed = true
         }
         item.configureCell(cell)
-        item.onTap()
+        item.onTap?()
         XCTAssertEqual(cell.backgroundColor, .red)
         XCTAssertEqual(item.cellIdentifier(), cellID)
         XCTAssertTrue(pressed == true)

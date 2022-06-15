@@ -7,9 +7,9 @@
 
 import UIKit
 import fuikit
+import Combine
 
 open class FlexDataSource: FPUITableViewDataSource, FlexDataSourceProtocol {
-    
     public var tableView: UITableView? {
         didSet {
             registerCells()
@@ -43,5 +43,15 @@ open class FlexDataSource: FPUITableViewDataSource, FlexDataSourceProtocol {
     convenience init(_ tableView: UITableView? = nil, _ items: [FlexDataSourceItem]) {
         let section = FlexDataSourceSection(title: nil, items: items)
         self.init(tableView, [section])
+    }
+    
+    open func setSections(_ sections: [FlexDataSourceSection]?) {
+        self.sections = sections
+        tableView?.reloadData()
+    }
+    
+    open func setItems(_ items: [FlexDataSourceItem]?) {
+        let section = FlexDataSourceSection(title: nil, items: items)
+        setSections([section])
     }
 }
